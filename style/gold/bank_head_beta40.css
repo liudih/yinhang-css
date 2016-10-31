@@ -1,0 +1,128 @@
+@charset "utf-8";
+/*Css Public Document*/
+body{margin:0;padding:0;font-size:12px;font-family:"宋体";color:#333;}
+div,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,input,table,tr,td,select{margin:0;padding:0;}
+ul,li{list-style:none;}
+img{border:0;}
+a{color:#333;text-decoration:none;}
+a:hover{color:#3b639f;text-decoration:underline;}
+h2{font-size:14px;}
+h3{font-size:14px;}
+h4{font-size:12px;}
+.clearfix:after{content:"\0020";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{zoom:1;}
+.fl_l{float:left;}
+.fl_r{float:right;}
+.mt10{margin-top:10px;}
+.mr10{margin-right:10px;}
+.mt20{margin-top:20px;}
+.ml6{margin-left:6px;}
+.ml10{margin-left:10px;}
+.mr10{margin-right:10px;}
+.mr20{margin-right:20px;}
+.p10{padding:10px;}
+.w200{width:200px;}
+.w240{width:240px;}
+.w250{width:250px;}
+.w310{width:310px;}
+.w320{width:320px;}
+.w330{width:330px;}
+.w300{width:300px;}
+.w490{width:490px;}
+.w550{width:550px;}
+.w560{width:560px;}
+.w650{width:650px;}
+.w810{width:810px;}
+.h90{height:90px;}
+.h120{height:120px;}
+.h150{height:150px;}
+.borTop{border-top:1px solid #f4f4f4;}
+.mt-1{margin-top:-1px;}
+.overflow_h { overflow:hidden;}
+
+/*header*/
+.top_advs{width:960px;margin:0 auto;}
+.head { width:960px; margin:0 auto; padding:0;}
+/*head_top*/
+.head_top { width:960px; height:20px; background:url(../../images/cngold/head_topbg.gif) 0px 0px no-repeat; padding-top:7px;}
+.head_top ul li { float:left; text-indent:12px; }
+.head_top ul li a { color:#666; }
+.head_top ul li img {padding-right:5px; vertical-align:middle; margin-top:-4px; *margin-top:0px;}
+.head_top ul li span a { color:#ab0003; }
+.head_top ul li strong { color:#ff0000; }
+.head_top p { float:right; margin-right:10px;  }
+.head_top p a{ color:#ab0003;}
+/*login register*/
+.head_top p.login { background:url(../../images/cngold/login.gif) 0px 0px no-repeat; width:40px; height:21px; text-indent:-9999px; margin:-4px 8px 0 0;}
+.head_top p.login a {width:40px; height:21px; display:block;}
+.head_top p.register { background:url(../../images/cngold/login.gif) -41px 0px no-repeat; width:40px; height:21px; text-indent:-9999px; margin:-4px 10px 0 0;}
+.head_top p.register a {width:40px; height:21px; display:block;}
+.head_top p.qq {margin:-5px 0px 0 0;}
+.head_top p.sina {margin:-5px 8px 0 0;}
+
+
+/*登录*/
+.login_r { text-align: right;float:left; margin-top:-4px;padding-left:20px;}
+.login_r input{float:left;margin-right:4px;}
+.login_r input.login_input_01, .login_r input.input_name, .login_r input.now_input { background:url(../../images/cngold/reg_input_01.png) left center no-repeat; width:93px; height:12px; padding:4px; height:20px\9; width:97px\9; padding:0px 2px\9; font-size:12px; border:0;}
+.login_r input.now_input{ color:#000;}
+.login_r input.now_input2{ color:#000;}
+.login_r input.login_input_01 { color:#999;font-size:12px;font-weight:normal;}
+.login_r input.login_input_02, .login_r input.input_name2, .login_r input.now_input2 { background:url(../../images/cngold/reg_input_02.png) left center no-repeat; width:62px; height:12px; padding:4px; width:66px\9; height:20px\9; padding:0px 2px\9; font-size:12px; border:0;}
+.login_r input.login_input_03 { background:url(../../images/cngold/reg_input_03.png) no-repeat; width:13px; height:13px; border:0;margin-top:3px;}
+.login_r label a { color:#666; margin-left:4px; display:inline;}
+.login_r label.zidong { color:#666;float:left;line-height:20px;margin-right:4px;}
+.login_r input.login_botton { background:url(../../images/cngold/index_regbtn.png) no-repeat; width:38px; height:18px; line-height:18px; text-align:center; border:0; color:#fff; cursor:pointer; position:relative\9; top:-1px\9;font-size:12px;}
+.login_dc{ float:left; margin-top:-4px; margin-top:-2px\9; text-align: right; width: 340px;}
+.login_dc strong{ color:#ab0003; margin-right:6px; display:inline;}
+.login_dc label{ color:#666; margin-left:3px; display:inline;}
+.login_dc em a{ color:#666; text-decoration:none; font-style:normal;}
+.login_dc em a:hover{ color:#f00; text-decoration:none; font-style:normal;}
+.login_dc a{ color:#666;}
+.login_dc a:hover{ color:#ab0003;}
+.login_dc input.login_botton { background:url(../../images/cngold/index_regbtn.png) no-repeat; width:38px; height:18px; line-height:18px; text-align:center; border:0; color:#fff; cursor:pointer; position:relative\9; top:1px\9;}
+
+/*ad*/
+
+/*theme*/
+.theme2{padding:8px 0;}
+.theme2 h1{background:url("../../images/cngold/logo_bank.jpg") no-repeat 0 center;width:170px;text-indent:-9999px; float:left;}
+.theme2 h1 a{display: block;height:50px;text-decoration: none;width:170px;}
+
+/*nav*/
+.nav{height:38px;line-height:38px;background:url(../../images/cngold/bank_sprite.png) repeat-x 0 0;}
+.nav .nLi{float:left;text-align:center;background:url(../../images/cngold/bank_sprite.png) no-repeat right 0;position:relative;z-index:9999;}
+.nav .nLi.hot{}
+.nav .nLi.end{background:url(../../images/cngold/bank_sprite.png) no-repeat 0 0;}
+.nav .nLi h2{font:bold 16px/38px "microsoft yahei";}
+.nav .nLi a{display:block;color:#fff;width:136px;}
+.nav .nLi.hot a{color:#ffea00;}
+.nav .nLi.hot h2 a{background:url(../../images/cngold/hot_icon.png) no-repeat 110px 2px;}
+.nav .nLi h2 a:hover,.nav .nLi.on h2 a{text-decoration:none;color:#fff;background:url(../../images/cngold/bank_sprite.png) 0 -38px no-repeat;height:38px;}
+.nav .sub{ display:none; width:136px; left:0; top:34px;  position:absolute;z-index:9999; background:#ab2419;  line-height:30px;}
+.nav .sub li{ zoom:1; }
+.nav .sub a{ display:block;}
+.nav .sub a:hover{ background:#991308;color:#fff;text-decoration:none;}
+.nav .sub2{width:272px;}
+.nav .sub2 li{float:left;}
+
+.navBox{height:26px;line-height:26px;background:#e4ecf2;padding:0 10px;color:#1e547c;}
+.navBox strong{color:#333;float:left;}
+.navBox a{color:#1e547c;}
+.navBox .fl_l{margin-right:10px;}
+
+/*head_site*/
+.head_site {height:30px;}
+.head_site .site {float:left; height:30px; line-height:30px; overflow:hidden;}
+.head_site .site span {font-weight:600; color:#aaa;}
+.head_site .site span.red{ font-weight:normal; color:#ab0003;}
+.head_site .site a{color:#999;}
+.head_site .site a.red {color:#ab0003;}
+.head_site .text_share {float:right; margin-top:2px;}
+.head_site .text_prize{float:right;margin:6px 4px 0 0;color:#00349A;}
+.head_site .text_prize a{text-decoration:underline;color:#00349A;}
+.head_site .text_prize span{margin:0 2px;}
+.head_site .text_prize table{width:100%;border:0;}
+.head_site .text_prize table tr th,.head_site .text_prize table tr td {line-height:15px;height:15px; border:0;}
+
+.header {overflow:visible !important;}
