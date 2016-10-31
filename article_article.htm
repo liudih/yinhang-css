@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}_{dede:field name='typename'/}_银行利率网</title>
+
+
+ {dede:php}
+        $arcurl=GetOneArchive($refObj->Fields[id]);
+        $arcurl=$arcurl['arcurl'];
+        if(!empty($arcurl)){
+        echo '<meta name="mobile-agent" content="format=[wml|xhtml|html5]; url=http://m.yinhanglilv.net'.$arcurl.'" />';
+
+        echo '<script type="text/javascript">var mobileUrl="http://m.yinhanglilv.net'.$arcurl.'"; ';
+
+        echo 'mobile = (/mmp|symbian|smartphone|midp|wap|phone|xoom|iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())); ';
+     
+        echo 'if (mobile) { window.location = mobileUrl;}</script> ';
+        }
+        {/dede:php}
+    
+        
+
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<link href="http://css.yinhanglilv.net/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+<link rel="stylesheet" href="http://css.yinhanglilv.net/style/dedecms_skins_0.css" type="text/css" id="cssfile" />
+<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmspath/}/images/js/j.js" ></script>
+<script language="javascript" type="text/javascript" src="http://css.yinhanglilv.net/js/jquery.cookie.js"></script>
+<script language="javascript" type="text/javascript" src="http://css.yinhanglilv.net/js/changeSkin.js"></script>
+<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script>
+
+</head>
+<body class="articleview">
+{dede:include filename="head.htm"/}
+<!-- /header -->
+<div class="w960 center clear mt1">
+<div class="pleft">
+  <!-- /picnews -->
+  <div class="place"> <strong>当前位置:</strong> {dede:field name='position'/} </div>
+  <!-- /place -->
+  <div class="viewbox">
+    <div class="title">
+      <h2>{dede:field.title/}</h2>
+    </div>
+    <!-- /title -->
+    <div class="info"> <small>时间:</small>{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}<small>来源:</small>{dede:field.source/} <small>作者:</small>{dede:field.writer/} <small>点击:</small>
+      <script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script>
+      次</div>
+    <!-- /info -->
+    <div class="content">
+      <table width='100%'>
+        <tr>
+          <td ><div class="img_l" style=" overflow:hidden">
+<script type="text/javascript">
+var cpro_id="u2398895";
+(window["cproStyleApi"] = window["cproStyleApi"] || {})[cpro_id]={at:"3",rsi0:"660",rsi1:"250",pat:"1",tn:"baiduCustNativeAD",rss1:"#FFFFFF",conBW:"1",adp:"2",ptt:"0",titFF:"%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91",titFS:"",rss2:"#000000",titSU:"0",tft:"0",tlt:"1",ptbg:"90",piw:"120",pih:"70",ptp:"1"}
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+            </div></td></tr>
+			  <tr>
+          <td >
+            {dede:field.body/}
+            
+            
+            本信息由银行利率网（www.yinhanglilv.net）首发,转载请注明来路，请尊重作者版权。 <br>
+            信息来源：<a href="{dede:field name='arcurl'/}" title="{dede:field name='title'/}" target="_blank" ><font color="blue">{dede:field name='title'/}</font></a></td>
+        </tr>
+      </table>
+      <div class="dede_pages">
+        <ul class="pagelist">
+          {dede:pagebreak/}
+        </ul>
+      </div>
+ <div class="listbox">
+<script type="text/javascript">
+    /*内页左边内容后面712*100 创建于 2016-03-20*/
+    var cpro_id = "u2566792";
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+      <div class="listbox">
+        <dl class="tbox">
+          <dt><strong>{dede:field.guanjianzi/}相关阅读推荐</strong></dt>
+          <dd>
+            <ul class="d1 ico3">
+              {dede:arclist  row='12' titlelen='80'  keyword='guanjianzi'  typeid = 'all'}
+              <li><span>[field:pubdate function="MyDate('m-d',@me)"/]</span><a href="[field:arcurl /]" title="[field:title/] "target="_blank">[field:title /]</a></li>
+              {/dede:arclist}
+            </ul>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <!-- /content -->
+	  <div class="listbox">
+	  <script type="text/javascript">
+var cpro_id="u2398892";
+(window["cproStyleApi"] = window["cproStyleApi"] || {})[cpro_id]={at:"3",rsi0:"712",rsi1:"250",pat:"1",tn:"baiduCustNativeAD",rss1:"#FFFFFF",conBW:"1",adp:"1",ptt:"2",ptc:"%E7%8C%9C%E4%BD%A0%E6%84%9F%E5%85%B4%E8%B6%A3",ptFS:"18",ptFC:"#000000",ptBC:"#cc0000",titFF:"%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91",titFS:"16",rss2:"#000000",titSU:"0",tft:"1",tlt:"1",ptbg:"90",piw:"0",pih:"0",ptp:"0"}
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+	  </div>
+    <!-- /pages -->
+    <div class="boxoff"> <strong>------分隔线----------------------------</strong> </div>
+    <div class="handle">
+      <div class="context">
+        <ul>
+          <li>{dede:prenext get='pre'/}</li>
+          <li>{dede:prenext get='next'/}</li>
+        </ul>
+      </div>
+      <!-- /context -->
+      <div class="actbox">
+        <ul>
+          <li id="act-fav"><a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank">利率常识</a></li>
+          <li id="act-err"><a href="http://www.yinhanglilv.net/deposit_accrual/" target="_blank">利息</a></li>
+          <li id="act-pus"><a href="http://www.yinhanglilv.net/loan_rate/" target="_blank">贷款</a></li>
+          <li id="act-pnt"><a href="http://www.yinhanglilv.net/deposit_rate/" target="_blank">存款</a></li>
+        </ul>
+      </div>
+      <!-- /actbox -->
+    </div>
+    <!-- /handle -->
+  </div>
+  <!-- /viewbox -->
+  <div class="listbox">
+    <dl class="tbox">
+      <dt><strong><a href="{dede:field name='arcurl'/}" title="{dede:field name='title'/}" target="_blank" >{dede:field.title/}</a>相关阅读推荐</strong><span class="more">更多...</span></dt>
+      <dd>
+        <ul class="d1 ico3">
+	  {dede:likeart titlelen='40' row='8' col='2'}
+          <li><span>[field:pubdate function="MyDate('m-d',@me)"/]</span><a href="[field:arcurl /]" title="[field:title/] "target="_blank">[field:title /]</a></li>
+   	  {/dede:likeart}
+        </ul>
+      </dd>
+    </dl>
+  </div>
+  <!-- //AJAX评论区 -->
+  <div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1965638"></script> </div>
+<!-- //左边内容结束 -->
+<!-- //右边内容开始 -->
+
+  <div class="pright">
+    <div class="commend mt1">
+      <dl class="tbox light">
+        <dt class='light'><strong>赞助商广告</strong></dt>
+        <dd class='light'>
+          <ul class="c1 ico2">
+<!-- 广告位：yinhanglilv-250*250 -->
+<script type="text/javascript">
+var cpro_id="u2398899";
+(window["cproStyleApi"] = window["cproStyleApi"] || {})[cpro_id]={at:"3",rsi0:"250",rsi1:"250",pat:"17",tn:"baiduCustNativeAD",rss1:"#FFFFFF",conBW:"1",adp:"1",ptt:"0",titFF:"%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91",titFS:"14",rss2:"#000000",titSU:"0"}
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+
+    <!-- /commend -->
+    <div>
+      <dl class="tbox">
+        <dt><strong>栏目列表</strong></dt>
+        <dd>
+          <ul class="d6">
+            {dede:channel type='son' currentstyle="
+            <li><a href='~typelink~' class='thisclass'>~typename~</a></li>
+            "}
+            <li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+            {/dede:channel}
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div class="commend mt1">
+      <dl class="tbox light">
+        <dt class='light'><strong>银行利率相关</strong></dt>
+        <dd class='light'>
+          <ul class="c1 ico2">
+<!-- 广告位：yinhanglilv-250*250 -->
+<script type="text/javascript">
+    /*250*250连接 创建于 2015-11-13*/
+    var cpro_id = "u2398897";
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+
+    <!-- /commend -->
+    <div class="commend mt1">
+      <dl class="tbox light">
+        <dt class='light'><strong>推荐内容</strong></dt>
+        <dd class='light'>
+          <ul class="d4">
+            {dede:arclist flag='c' titlelen=42 row=10}
+            <li><a href="[field:arcurl/]">[field:title/]</a>
+              <p>[field:description function='cn_substr(@me,80)'/]...</p>
+            </li>
+            {/dede:arclist}
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <!-- /commend -->
+    <div class="commend mt1">
+      <dl class="tbox light">
+        <dt class='light'><strong>最新资讯</strong></dt>
+        <dd class='light'>
+          <ul class="d4">
+            {dede:arclist  row='12'titlelen='80' orderby='rand'}
+            <li><a href="[field:arcurl/]">[field:title/]</a>
+              <p>[field:description function='cn_substr(@me,80)'/]...</p>
+            </li>
+            {/dede:arclist}
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <!-- /commend -->
+    <div class="hot mt1">
+      <dl class="tbox light">
+        <dt class='light'><strong>热点内容</strong></dt>
+        <dd class='light'>
+          <ul class="c1 ico2">
+            {dede:arclist row=10 orderby=click}
+            <li><a href="[field:arcurl/]">[field:title/]</a></li>
+            {/dede:arclist}
+          </ul>
+        </dd>
+      </dl>
+    </div>
+  </div>
+  <!-- /pright -->
+</div>
+{dede:include filename="footer.htm"/}
+
+<!-- /footer -->
+<!-- 广告位：对联广告 -->
+<script type="text/javascript">
+    /*120*300 创建于 2015-11-12*/
+var cpro_id = "u2398718";
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/f.js" type="text/javascript"></script>
+
+</body>
+</html>

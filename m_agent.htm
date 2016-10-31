@@ -1,0 +1,17 @@
+
+{dede:php}
+global $lv,$dsql;
+if(isset($lv->TypeID) && $lv->TypeID > 0){
+$rute = '';
+$sql = "Select typedir,namerule2,sitepath from `#@__arctype` where id='$lv->TypeID' ";
+$cateInfo = $dsql->GetOne($sql);
+$typeDir = str_replace('{cmspath}','', $cateInfo['typedir']);
+if($lv->thisPage > 1){
+    $rute    = $typeDir.str_replace(array('{typedir}', '{page}'), array('', $lv->thisPage), $cateInfo['namerule2']);
+}else{
+    $rute    = $typeDir.'/';
+}
+    echo '<meta name="mobile-agent" content="format=html5; url=http://m.yinhanglilv.net'.$rute.'" />';
+    echo '<meta name="mobile-agent" content="format=xhtml; url=http://m.yinhanglilv.net'.$rute.'" />';
+}
+{/dede:php}
