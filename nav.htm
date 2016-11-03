@@ -1,8 +1,19 @@
 <ul class="nav clearfix" id="nav">
+	
     <li class="nLi on">
         <h2><a href="http://bank.cngold.org/" target="_blank" title="首页">首页</a><iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe></h2>
     </li>
-    <li class="nLi">
+    {dede:channelartlist typeid='top' row='11'} 
+    <li class="nLi hot">
+        <h2><a href="{dede:field name='typeurl'/}" target="_blank" title="{dede:field name='typename'/}">{dede:field name='typename'/}</a></h2>
+        <ul class="sub clearfix" style="display: none;">
+		{dede:channel type='son' noself='true'} 
+			<li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+		{/dede:channel} 
+		</ul>
+    </li>  
+    {/dede:channelartlist} 
+   <!--  <li class="nLi">
         <h2><a href="http://bank.cngold.org/yhzx/" target="_blank" title="银行资讯">银行资讯</a></h2>
         <ul class="sub sub2 clearfix" style="display: none;">
             <li><a href="http://bank.cngold.org/yhzx/" target="_blank" title="银行资讯">银行资讯</a></li>
@@ -67,18 +78,7 @@
             <li><a href="http://credit.cngold.org/cib/" target="_blank" title="兴业信用卡专场">兴业信用卡专场</a></li>
             <li><a href="http://credit.cngold.org/xyk/" target="_blank" title="信用卡超市">信用卡超市</a></li>
         </ul>
-    </li>
-    <li class="nLi">
-        <h2><a href="http://bank.cngold.org/yhdq/" target="_blank" title="银行大全">银行大全</a></h2>
-        <ul class="sub" style="display: none;">
-            <li><a href="http://bank.cngold.org/yhwd/" target="_blank" title="银行网点">银行网点</a></li>
-            <li><a href="http://bank.cngold.org/wsyh/" target="_blank" title="网上银行">网上银行</a></li>
-            <li><a href="http://bank.cngold.org/mbank/" target="_blank" title="手机银行">手机银行</a></li>
-            <li><a href="http://bank.cngold.org/baike/" target="_blank" title="银行百科">银行百科</a></li>
-            <li><a href="http://bank.cngold.org/yhk/" target="_blank" title="银行卡">银行卡</a></li>
-            <li><a href="http://bank.cngold.org/yhll/" target="_blank" title="银行利率">银行利率</a></li>
-        </ul>
-    </li>
+    </li> -->
 </ul>
 <script type="text/javascript" src="{dede:global.cfg_cmspath/}/templets/cngold/js/jquery.SuperSlide.2.1.js"></script>
 <script type="text/javascript">
