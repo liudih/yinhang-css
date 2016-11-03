@@ -4,7 +4,7 @@
         <h2><a href="http://bank.cngold.org/" target="_blank" title="Ê×Ò³">Ê×Ò³</a><iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe></h2>
     </li>
     {dede:channelartlist typeid='top' row='11'} 
-    <li class="nLi hot">
+    <li class="nLi {dede:global name=itemindex runphp='yes'}if(@me==11){@me=' hot';}{/dede:global}">
         <h2><a href="{dede:field name='typeurl'/}" target="_blank" title="{dede:field name='typename'/}">{dede:field name='typename'/}</a></h2>
         <ul class="sub clearfix" style="display: none;">
 		{dede:channel type='son' noself='true'} 
