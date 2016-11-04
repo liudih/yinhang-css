@@ -3,8 +3,8 @@
         <h2><a href="http://www.yinhanglilv.net" target="_blank" title="首页">首页</a><iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe></h2>
     </li>
     {dede:channelartlist typeid='top' row='11'} 
-    <li class="nLi {dede:global name=itemindex runphp='yes'}if(@me==11){@me=' hot';}{/dede:global}">
-        <h2 class="ind{dede:field.typeid/}"><a href="{dede:field name='typeurl'/}" target="_blank" title="{dede:field name='typename'/}" >{dede:field name='typename'/}</a></h2>
+    <li class="nLi {dede:global name=itemindex runphp='yes'}if(@me==11){@me=' hot';}{/dede:global} ind{dede:field.typeid/}">
+        <h2><a href="{dede:field name='typeurl'/}" target="_blank" title="{dede:field name='typename'/}" >{dede:field name='typename'/}</a></h2>
         <ul class="sub clearfix" style="display: none;">
 		{dede:channel type='son' noself='true'} 
 			<li><a href='[field:typeurl/]' target="_blank" class="suba" title="[field:typename/]" >[field:typename/]</a></li>
@@ -26,10 +26,16 @@
 <iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe></div>
 <script type="text/javascript" src="{dede:global.cfg_cmspath/}/templets/cngold/js/jquery.SuperSlide.2.1.js"></script>
 <script type="text/javascript">
-	var theTypeid = '.ind{dede:field.typeid function="GetTopid(@me)"/}';
-	var ind = $("#nav "+theTypeid).parent().index();
+	//获取当前导航在第几位
+	var theTypeid = 'ind{dede:field.typeid function="GetTopid(@me)"/}';
 	console.log(theTypeid);
-	console.log($("#nav "+theTypeid).parent());
-	console.log(ind);
-    jQuery("#nav").slide({ type:"menu", titCell:".nLi", targetCell:".sub",effect:"slideDown",delayTime:200,triggerTime:0,returnDefault:true/*,defaultIndex:0*/});
+	var ind = 0;
+	$(".nav >li").each(function(i,e){
+		if($(e).hasClass(theTypeid)){
+			return false;
+		}
+		ind++;
+	});
+	if(theTypeid=="ind"){ind=0;}
+    jQuery("#nav").slide({ type:"menu", titCell:".nLi", targetCell:".sub",effect:"slideDown",delayTime:200,triggerTime:0,returnDefault:true,defaultIndex:ind});
 </script>
