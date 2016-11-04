@@ -98,7 +98,7 @@ h4{font-size:12px;}
 .nav .nLi a{display:block;color:#fff;width:80px;}
 .suba {width:125px !important; text-align:left; padding-left:12px;}
 .nav .nLi.hot a{color:#ffea00;}
-.nav .nLi.hot h2 a{background:url(../../images/cngold/hot_icon.png) no-repeat 110px 2px;}
+.nav .nLi.hot h2 a{background:url(../../images/cngold/hot_icon.png) no-repeat 61px 1px;}
 .nav .nLi h2 a:hover,.nav .nLi.on h2 a{text-decoration:none;color:#fff;background:url(../../images/cngold/bank_sprite.png) 0 -38px no-repeat;height:38px;}
 .nav .sub{ display:none; width:137px; left:0; top:34px;  position:absolute;z-index:9999; background:#ab2419;  line-height:30px;}
 .nav .sub li{ zoom:1; }

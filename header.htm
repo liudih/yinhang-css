@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="{dede:global.cfg_cmspath/}/templets/cngold/style/gold/bank_head_beta40.css" type="text/css" />
+<div class="header">
+  <script language="javascript" type="text/javascript">
+	window.onload=function (){
+		setInterval("document.getElementById('time').innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);
+	}
+  </script>
+  	<!-- head -->
+    <div class="header_top w960">     
+     <span id="time" class="time"></span>
+     <div class="toplinks"><a href="{dede:global.cfg_cmsurl/}/plus/heightsearch.php" target="_blank">高级搜索</a>|<a href="{dede:global.cfg_cmsurl/}/data/sitemap.html" target="_blank">网站地图</a>|<a href="{dede:global.cfg_cmsurl/}tags.php">TAG标签</a>|<a href="http://www.yinhanglilv.net/data/rssmap.html">RSS订阅</a><span>【<a href=""onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('{dede:global.cfg_basehost/}');">设为首页</a>】【<a href="javascript:window.external.AddFavorite('{dede:global.cfg_basehost/}','{dede:global.cfg_webname/}')">加入收藏</a>】</span></div>
+    </div>
+    <!-- //head -->
+    <!-- logo -->
+	<div class="top w960 center">
+		<div class="title">
+		 <h1><a href="{dede:global.cfg_basehost/}"><img src="http://css.yinhanglilv.net/images/logo.png" height="60" width="300" alt="{dede:global.cfg_webname/}"/></a> </h1>
+		</div>
+	   	<div class="banner"><h1><!-- 广告位:站内搜索yinhanglilv-顶部通栏660*36 -->
+			<div align="center" style="padding-top:0px; text-align:center; padding-left:0px">
+			<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=4589069025291913034' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
+			</div>
+			</h1>
+		</div>
+	</div>
+	<!-- //logo -->
+	<!-- 菜单 -->
+	{dede:include filename="nav.htm"/}
+	<!-- //菜单 -->
+</div>

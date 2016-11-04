@@ -1,65 +1,6 @@
+{dede:include filename="header.htm"/}
 <!-- 请置于所有广告位代码之前 -->
 <script type="text/javascript" src="http://cbjs.baidu.com/js/m.js"></script>
-
-<div class="header">
-  <script language="javascript" type="text/javascript">
-	window.onload=function (){
-		setInterval("document.getElementById('time').innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);
-	}
-  </script>
-  	<!-- head -->
-    <div class="header_top w960">     
-     <span id="time" class="time"></span>
-     <div class="toplinks"><a href="{dede:global.cfg_cmsurl/}/plus/heightsearch.php" target="_blank">高级搜索</a>|<a href="{dede:global.cfg_cmsurl/}/data/sitemap.html" target="_blank">网站地图</a>|<a href="{dede:global.cfg_cmsurl/}tags.php">TAG标签</a>|<a href="http://www.yinhanglilv.net/data/rssmap.html">RSS订阅</a><span>【<a href=""onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('{dede:global.cfg_basehost/}');">设为首页</a>】【<a href="javascript:window.external.AddFavorite('{dede:global.cfg_basehost/}','{dede:global.cfg_webname/}')">加入收藏</a>】</span></div>
-    </div>
-    <!-- //head -->
-    <!-- logo -->
-	<div class="top w960 center">
-		<div class="title">
-		 <h1><a href="{dede:global.cfg_basehost/}"><img src="http://css.yinhanglilv.net/images/logo.png" height="60" width="300" alt="{dede:global.cfg_webname/}"/></a> </h1>
-		</div>
-	   	<div class="banner"><h1><!-- 广告位:站内搜索yinhanglilv-顶部通栏660*36 -->
-			<div align="center" style="padding-top:0px; text-align:center; padding-left:0px">
-			<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=4589069025291913034' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
-			</div>
-			</h1>
-		</div>
-	</div>
-	<!-- //logo -->
-	<!-- 菜单 -->
-	{dede:include filename="nav.htm"/}
-	<!-- <div class="module blue mT10 wrapper w963">
-	  	<div class="top">
-	    	<div class="t_l"></div>
-	    	<div class="t_r"></div>
-	    	//如果不使用currentstyle，可以在channel标签加入 cacheid='channeltoplist' 属性提升性能
-		    <div id="navMenu">
-		    	<ul>
-		      	<li><a href='{dede:global.cfg_cmsurl/}/'><span>主页</span></a></li>
-		      	{dede:channel type='top' row='11' currentstyle="<li class='hover'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>"}
-		      	<li><a href='[field:typeurl/]' [field:rel/]><span>[field:typename/]</span></a></li>
-		      	{/dede:channel}
-		    	</ul>
-		    </div>	
-		    <div class="search">
-			      <div class="form" style="padding-top:2px"></div>
-		        <div class="tags">
-		          <h4>热门标签:</h4>
-		          <ul>
-				<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=4589069025291913034' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
-				
-				<li><a href="http://www.yinhanglilv.net/xinyongka/zhaohang/yikatong.html" title="招商银行一卡通激活方法"  target="_blank" >招商银行一卡通激活方法</a></li>
-				<li><a href="http://www.yinhanglilv.net/daikuanchangshi/xinjinbao.html" title="薪金宝"  target="_blank" >薪金宝</a></li>
-				<li><a href="http://www.yinhanglilv.net/hqck/" title="活期存款利率"  target="_blank" >活期存款利率</a></li>
-				<li><a href="http://www.yinhanglilv.net/dqck/" title="定期存款利率"  target="_blank" >定期存款利率</a></li>
-				<li><a href="http://www.yinhanglilv.net/reference_rate/" title="商业贷款利率"  target="_blank" >商业贷款利率</a></li>
-				<li><a href="http://www.yinhanglilv.net/deposit_rate/" title="存款利率表"  target="_blank" >存款利率表</a></li>
-		          </ul>
-		        </div>
-		    </div>
-		</div>
-	</div> -->
-	<!-- //菜单 -->
 <!-- 广告位：全站横幅960*90 -->
 <script type="text/javascript">
     /*960*90 创建于 2015-11-12*/
@@ -72,4 +13,3 @@
     var cpro_id = "u2566839";
 </script>
 <script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
-</div><!-- //header -->
