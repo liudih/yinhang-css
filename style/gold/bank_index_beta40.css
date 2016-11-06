@@ -1,0 +1,347 @@
+@charset"utf-8";
+/*CssDocument*/
+.main{width:960px;margin-left:auto;margin-right:auto;margin-top:10px;}
+
+.slideBox{width:310px;height:230px;overflow:hidden;position:relative;}
+.slideBox .hd{height:8px;overflow:hidden;position:absolute;right:5px;bottom:35px;z-index:1;}
+.slideBox .hd ul{overflow:hidden;zoom:1;float:left;}
+.slideBox .hd ul li{float:left;margin-right:2px;width:8px;height:8px;line-height:8px;background:#bcc3ca;border-radius:4px;cursor:pointer;}
+.slideBox .hd ul li.on{background:#3a7ea5;}
+.slideBox .bd{position:relative;height:100%;z-index:0;}
+.slideBox .bd li{zoom:1;vertical-align:middle;}
+.slideBox .bd img{width:310px;height:200px;display:block;}
+.slideBox .bd h3{height:30px;line-height:30px;text-align:center;color:#000;background:#f2f2f2;}
+
+.indWrap{border-right:1px solid #f0f0f0;border-top:2px solid #b8c1ce;}
+.indWrapTit{line-height:40px;height:40px;overflow:hidden;}
+.indWrapTit .more{float:right;color:#999;margin-right:10px;}
+.indWrapTit h2{font:bold 14px/40px "microsoft yahei";color:#333;}
+.indWrapTit h2 a{color:#333;}
+
+.indWrapTit2{line-height:32px;height:32px;overflow:hidden;border-top:2px solid #4c748d;background:#f2f2f2;padding:0 10px;}
+.indWrapTit2 .more{float:right;color:#999;}
+.indWrapTit2 .more a{color:#999;}
+.indWrapTit2 h2{float:left;font:bold 16px/32px "microsoft yahei";color:#ba0003;}
+.indWrapTit2 h2 a{color:#ba0003;}
+.indWrapTit2 .en{float:left;font:14px/20px "arial";color:#ccc;margin:8px 0 0 6px;}
+
+.indWrapTit3{line-height:28px;height:28px;position:relative;border:1px solid #efefef;background:#f6f6f6;}
+.indWrapTit3 .tabList{font-size:14px;height:30px;overflow:hidden;position:relative;top:-1px;}
+.indWrapTit3 .tabList a{color:#666;display:block;float:left;border-left:1px solid #fff;border-right:1px solid #ececed;}
+.indWrapTit3 .tabList a.on{background:#fff;color:#333;border-top:2px solid #367ea4;font-weight:bold;}
+.indWrapTit3 .tabList a.end{border-right:0;}
+.indWrapTit3 .tab01 a{width:160px;text-align:center;}
+.indWrapTit3 .tab02 a{width:214px;text-align:center;}
+.indWrapTit3 .tab03 a{width:106px;text-align:center;}
+
+.indNews{}
+.indNews li{font-size:14px;line-height:30px;height:30px;padding-left:12px;overflow:hidden;background:url(http://res.cngoldres.com/bank/img/bank_img.jpg) no-repeat 0 -703px;}
+.indNews li.adv a{color:#ba0003;text-decoration:underline;font-weight:bold;}
+
+.indYW{border-top:1px solid #f0f0f0;}
+.indYW h2{font:bold 16px/30px "microsoft yahei";color:#ba0003;}
+.indYW h2 a{color:#ba0003;}
+.indYW .ywEle{border-bottom:1px dotted #ededed;padding:10px 0;}
+.indYW h3{font:bold 16px/30px "microsoft";height:30px;overflow:hidden;color:#3b639f;text-align:center;}
+.indYW h3 a{color:#3b639f;}
+.indYW p{color:#999;line-height:20px;}
+.indYW .ywEle li{float:left;width:165px;padding:4px 0;}
+.indYW .ywEle li.one{text-align:right;}
+.indYW .ywEle li a{display:block;height:16px;line-height:16px;overflow:hidden;padding:0 0 0 10px;}
+.indYW .ywEle li.one a{border-right:1px solid #333;padding:0 10px 0 0;}
+
+.indCard{background:#fafafa;}
+.indCard h2{font:normal 18px/36px "microsoft yahei";color:#fff;text-align:center; background:url(http://res.cngoldres.com/bank/img/bank_sprite.png) repeat-x 0 -1px; margin-bottom:4px;}
+.indCard .advWords{padding:4px 7px 4px 17px;}
+.indCard .advWords li{float:left;width:80px;height:40px;margin-right:10px;font:14px/40px "microsoft yahei";color:#3b639f;text-align:center;border:1px solid #dbe4eb;border-radius:4px;background: -moz-linear-gradient(top, #ffffff, #eff4f8); background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #eff4f8));filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eff4f8', GradientType='0');}
+
+.indCard .advLinks{padding:0 16px 10px 16px;border-bottom:1px dashed #ddd;}
+.indCard .advLinks li{float:left;width:132px;height:24px;font:12px/24px "microsoft yahei";color:#666;}
+.indCard .advLinks li img{float:left;width:18px;height:18px;margin:3px 4px 0 0;}
+.indCard .advLinks li.more{background:url(../img/bank_sprite.png) no-repeat 0 -84px;}
+.indCard .advLinks li.more a{margin-left:22px;}
+.indCard .advCards{padding:5px 0;}
+.indCard .advCards li{padding:5px 10px;height:66px;}
+.indCard .advCards .pic{float:left;width:105px;height:66px;margin-right:10px;}
+.indCard .advCards .desc{float:left;color:#ff6600;font:bold 12px/20px "microsoft yahei";width:165px;height:40px;overflow:hidden;}
+.indCard .advCards .pic{float:left;width:105px;height:66px;margin-right:10px;}
+.indCard .advCards .applyBtn{float:left;display:block;width:81px;height:24px;line-height:24px;font-weight:bold;color:#fff;text-align:center;margin-top:2px;border-radius:2px;background: -moz-linear-gradient(top, #32afc2, #1a9aad); background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #32afc2), color-stop(1, #1a9aad));filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#32afc2', endColorstr='#1a9aad', GradientType='0');}
+
+.bank_tabList{padding:0 0 11px;height:28px;}
+.bank_tabList li{float:left;text-align:center;position:relative;}
+.bank_tabList li a{display:inline-block;height:28px;line-height:28px;text-align:center;background:#fafafa;}
+.bank_tabList li span{position:absolute;bottom:-7px;z-index:-1;color:#fff;}
+.bank_tabList li.on a{color:#fff;background:#367ea4;font-weight:bold;}
+.bank_tabList li.on span{color:#367ea4;}
+.bank_tab01 li a{width:81px;}
+.bank_tab01 li span{left:36px;}
+.bank_tab02 li a{width:216px;}
+.bank_tab02 li span{left:102px;}
+.bank_tab03 li a{width:162px;}
+.bank_tab03 li span{left:75px;}
+
+.bankNewAdv1{}
+.bankNewAdv1 h3{font:bold 16px/30px "microsoft";height:30px;overflow:hidden;color:#3b639f;text-align:center;}
+.bankNewAdv1 h3 a{color:#3b639f;}
+.bankNewAdv1 p{color:#999;line-height:20px;}
+
+.bankNewAdv2{margin:10px 0;}
+.bankNewAdv2 img{float:left;width:140px;height:70px;margin-right:10px;}
+.bankNewAdv2 h3{font:bold 16px/30px "microsoft";height:30px;overflow:hidden;color:#3b639f;}
+.bankNewAdv2 h3 a{color:#3b639f;}
+.bankNewAdv2 p{line-height:20px;height:40px;overflow:hidden;color:#8a8a8a;}
+.bankNewAdv2 p strong{color:#0055a8;}
+
+.indNews2{}
+.indNews2 li{float:left;width:302px;font-size:14px;line-height:30px;height:30px;padding:0 10px 0 12px;overflow:hidden;background:url(http://res.cngoldres.com/bank/img/bank_img.jpg) no-repeat 0 -703px;}
+.indNews2 li .name{color:#3b639f;margin-right:4px;}
+
+.indRWrap{border-top:2px solid #b8c1ce;border-left:1px solid #f4f4f4;}
+.indRWrapTit{background:#f6f6f6;border-bottom:1px solid #efefef;}
+.indRWrapTit .tabList{font-size:14px;font-weight:bold;height:30px;line-height:30px;overflow:hidden;position:relative;bottom:-1px;}
+.indRWrapTit .tabList a{color:#666;display:block;float:left;border-right:1px solid #efefef;}
+.indRWrapTit .tabList a.on{background:#fff;color:#333;}
+.indRWrapTit .tabList a.end{border-right:0;}
+.indRWrapTit .tab02 a{width:149px;text-align:center;}
+
+.indRSlide{}
+.indRSlide .hd{height:6px;padding:4px 4px 0 0;}
+.indRSlide .hd ul{float:right;height:6px;line-height:6px;overflow:hidden;}
+.indRSlide .hd li{float:left;width:6px;height:6px;background:#ccc;border-radius:3px;margin-right:2px;cursor:pointer;}
+.indRSlide .hd li.on{background:#ba0003;}
+
+.indRList{width:299px;}
+.indRList li{line-height:30px;height:30px;overflow:hidden;padding:0 5px;float:left;width:139px;color:#666;}
+.indRList li img{float:left;width:18px;height:18px;margin:6px 6px 0 0;}
+.indRList li a{color:#666;}
+
+.indRList2{width:299px;}
+.indRList2 li{line-height:30px;height:30px;overflow:hidden;padding-left:25px;float:left;width:124px;color:#666;background:url(../img/bank_sprite.png) no-repeat 10px -146px;}
+.indRList2 li img{float:left;width:18px;height:18px;margin:6px 6px 0 0;}
+.indRList2 li a{color:#666;}
+
+.cardSearch{padding-top:15px;}
+.cardSearch select{padding:3px;width:184px;}
+.cardSearch .content{padding-top:20px;}
+.cardSearch dl{height:40px;padding:0 15px;font-family:"Œ¢»Ì—≈∫⁄";font-size:14px;}
+.cardSearch dt,.cardSearch dd{float:left;}
+.cardSearch dt{width:70px;text-align:right;line-height:26px;}
+.cardSearch .searchBody{height:26px;background:url(http://res.cngoldres.com/credit/img/arrow_box.png) no-repeat right 0;padding:0 24px 0 0;cursor:pointer;position:relative;}
+.cardSearch .searchBody input{height:24px;line-height:24px;background:url(http://res.cngoldres.com/credit/img/input_bg.png);border:0;padding:1px 3px 1px 6px;font-family:"Œ¢»Ì—≈∫⁄";font-size:14px;}
+.cardSearch .searchBody ul{position:absolute;left:0;top:26px;z-index:999;background:#EBEBEB;display:none;}
+.cardSearch .searchBody ul li{padding:0 10px;line-height:30px;cursor:pointer;}
+.cardSearch .searchBtn{display:block;width:244px;height:39px;background:#1c9caf url(http://res.cngoldres.com/credit/img/search_btn.png) no-repeat center center;border:0;margin:0 auto 16px;text-indent:-9999em;cursor:pointer;}
+.searBox3{background:url(http://res.cngoldres.com/credit/img/input_bg.png) right 0;padding-right:6px;}
+.searBox3 input{width:170px;height:24px;line-height:24px;background:url(http://res.cngoldres.com/credit/img/input_bg.png);border:0;padding:1px 3px 1px 6px;font-family:"Œ¢»Ì—≈∫⁄";font-size:14px;}
+.creditZt{line-height:20px;color:#666;padding:0 20px;}
+.creditZt a{color:#666;margin-right:10px;}
+
+.indNews3{padding-left:10px;}
+.indNews3 li{line-height:30px;height:30px;padding-left:12px;overflow:hidden;background:url(http://res.cngoldres.com/bank/img/bank_img.jpg) no-repeat 0 -703px;}
+.indNews3 li.adv a{color:#ba0003;text-decoration:underline;}
+
+.indRWrapTit2{line-height:40px;height:40px;overflow:hidden;padding-left:10px;}
+.indRWrapTit2 .more{float:right;color:#999;}
+.indRWrapTit2 h2{font:bold 14px/40px "microsoft yahei";color:#333;}
+.indRWrapTit2 h2 a{color:#333;}
+
+.cardCate{border-top:1px dotted #f4f4f4;padding:0px 10px 10px;}
+.cardCate h3{display:inline;padding:2px;background:#bdc4cb;font:normal 12px/18px "microsoft";color:#fff;}
+.cardCate li{float:left;line-height:30px;background:url(http://res.cngoldres.com/credit/img/dot_icon01.png) no-repeat 0 12px;padding-left:12px;width:57px;}
+.cardCate li a{color:#333;}
+.cardCate li.more a{color:#ccc;}
+
+.card_tabList{height:28px;background:#fafafa;}
+.card_tabList h3{float:left;line-height:28px;color:#fff;font-size:12px;font-weight:bold;background:#367ea4;text-align:center;width:60px;}
+.card_tabList h3 a{color:#fff;}
+.card_tabList .tabs{float:left;padding:0 35px;}
+.card_tabList .tabs ul{height:27px;line-height:27px;border-bottom:1px solid #efefef;}
+.card_tabList .tabs li{float:left;position:relative;width:104px;height:26px;overflow:hidden;text-align:center;}
+.card_tabList .tabs li a{display:block;position:relative;z-index:3;}
+.card_tabList .tabs li span{position:absolute;left:47px;bottom:-15px;color:#fafafa;}
+.card_tabList .tabs li.on,.card_tabList .tabs li.menu_link{border-bottom:1px solid #ba0003;position:relative;}
+.card_tabList .tabs li.on a,.card_tabList .tabs li.menu_link a{color:#3b639f;font-weight:bold;}
+.card_tabList .tabs li.on span,.card_tabList .tabs li.menu_link span{color:#ba0003;}
+.card_tabList .next,.card_tabList .prev{position:absolute;width:35px;background:#fafafa;z-index:9999;text-align:center;cursor:pointer;padding:2px 0 1px;top:0;}
+.card_tabList .next a,.card_tabList .prev a{text-decoration:none;display:block;margin:0 auto;width:22px;height:22px;line-height:22px;border:1px solid #dbe4eb;font-size:12px;font-weight:900;color:#367ea4;border:1px solid #dbe4eb;border-radius:1px;background: -moz-linear-gradient(top, #ffffff, #eff4f8); background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #eff4f8));filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eff4f8', GradientType='0');}
+.card_tabList .next{right:0;}
+.card_tabList .prev{left:60px;}
+#indyhkCate{width:650px;position:relative;}
+#indyhkCate .hd{position:absolute;right:0;left:0;width:650px;}
+
+.xykConTj{}
+.xykConTj .txtList{float:left;width:165px;}
+.xykConTj .txtList h3{font:bold 14px/24px "microsoft yahei";}
+.xykConTj .txtList h3 img{float:left;margin-right:4px;width:24px;}
+.xykConTj .txtList h3 a{color:#0055a8;}
+.xykConTj .txtList ul{padding:10px 0 0 10px;}
+.xykConTj .txtList li{line-height:24px;height:24px;overflow:hidden;padding-left:10px;background:url(http://res.cngoldres.com/credit/img/dot_icon01.png) no-repeat 0 10px;color:#666;}
+.xykConTj .txtList li a{color:#666;}
+.xykConTj .txtList strong{color:#ab0003;}
+.xykConTj .hotCard{float:right;width:480px;border-left:1px solid #efefef;}
+
+.indCard_list{overflow:hidden;}
+.indCard_list li{float:left;text-align:center;width:134px;padding:8px 7px;border:1px solid #fff;}
+.indCard_list li img{display:block;margin:0 auto;}
+.indCard_list li h4{line-height:26px;height:26px;font-weight:normal;overflow:hidden;}
+.indCard_list li .desc{color:#ab0000;font-weight:bold;height:30px;line-height:30px;overflow:hidden;}
+.indCard_list .applyBtn{display:block;width:106px;height:33px;margin:1px auto 0;text-indent:-999em;background:url(../img/apply_btn01.png);}
+
+.indNews4{}
+.indNews4 li{margin-top:10px;}
+.indNews4 li.first{margin:0;}
+.indNews4 img{float:left;margin-right:10px;background:#ebebeb;width:93px;height:66px;padding:2px;}
+.indNews4 h3{font-size:14px;font-weight:bold;line-height:30px;height:30px;overflow:hidden;color:#3b639f;}
+.indNews4 h3 a{color:#3b639f;}
+.indNews4 p{line-height:20px;height:40px;overflow:hidden;color:#999;}
+
+.bankKF{padding-left:2px;}
+.bankKF li{float:left;width:106px;line-height:30px;height:30px;overflow:hidden;color:#999;}
+.bankKF li span{font-weight:bold;color:#3b639f;margin-left:4px;}
+
+.indWyList{position:relative;height:114px;padding:5px 0 5px 40px;border:solid #efefef;border-width:1px 0;}
+.indWyList h3{float:left;width:16px;height:112px;padding:14px 7px 0;line-height:16px;background:#367ea4;text-align:center;color:#fff;font-weight:bold;position:absolute;left:0;top:-1px;}
+.indWyList h3 a{color:#fff;}
+.indWyList a.next{position:absolute;right:10px;top:48px;width:17px;height:29px;text-indent:-9999px;overflow:hidden;cursor:pointer;background:url(../img/bank_sprite.png) no-repeat -300px -76px;}
+.indWyList a.next:hover{background-position:-317px -76px;}
+.indWyList .bd{float:left;}
+.indWyList ul{float:left;width:576px;}
+.indWyList li{float:left;width:144px;height:38px;line-height:38px;overflow:hidden;}
+.indWyList li img{float:left;width:18px;height:18px;margin:10px 4px 0 0;}
+
+.knowWrap{}
+.knowWrap .hd ul{border-bottom:1px solid #efefef;height:28px;line-height:28px;}
+.knowWrap .hd li{float:left;text-align:center;overflow:hidden;position:relative;cursor:pointer;}
+.knowWrap .hd li span{position:absolute;bottom:-8px;width:11px;height:12px;line-height:12px;overflow:hidden;color:#fff;}
+.knowWrap .hd li a{display:block;text-decoration:none;}
+.knowWrap .hd li.on{border-bottom:1px solid #ba0003;font-weight:bold;color:#3b639f;}
+.knowWrap .hd li.on a{color:#3b639f;}
+.knowWrap .hd li.on span{color:#ba0003;}
+.knowWrap .hd01 li{width:49px;}
+.knowWrap .hd01 li span{left:18px;}
+.knowWrap .hd02 li{width:99px;}
+.knowWrap .hd02 li span{left:43px;}
+.knowWrap .hd03 li{width:74px;}
+.knowWrap .hd03 li span{left:31px;}
+
+.indNews5{padding-left:10px;}
+.indNews5 li{line-height:30px;height:30px;padding:0 0 0 12px;overflow:hidden;background:url(http://res.cngoldres.com/bank/img/bank_img.jpg) no-repeat 0 -701px;}
+.indNews5 li a{color:#666;}
+.indNews5 li .name{color:#3b639f;margin-right:4px;}
+.indNews5 li .date{color:#999;float:right;margin-left:10px;}
+
+.indNews6{}
+.indNews6 li{float:left;width:313px;font-size:14px;line-height:30px;height:30px;padding-left:12px;overflow:hidden;background:url(http://res.cngoldres.com/bank/img/bank_img.jpg) no-repeat 0 -703px;}
+.indNews6 li.adv a{color:#ba0003;text-decoration:underline;}
+
+.loan_tabList{height:28px;background:#fafafa;}
+.loan_tabList h3{float:left;line-height:28px;color:#fff;font-size:12px;font-weight:bold;background:#367ea4;text-align:center;width:60px;}
+.loan_tabList h3 a{color:#fff;}
+.loan_tabList .tabs{float:left;width:590px;height:27px;line-height:27px;border-bottom:1px solid #efefef;}
+.loan_tabList .tabs li{float:left;position:relative;width:118px;overflow:hidden;text-align:center;}
+.loan_tabList .tabs li a{display:block;position:relative;z-index:3;}
+.loan_tabList .tabs li span{position:absolute;left:55px;bottom:-15px;color:#fafafa;}
+.loan_tabList .tabs li.on{border-bottom:1px solid #ba0003;position:relative;}
+.loan_tabList .tabs li.on a{color:#3b639f;font-weight:bold;}
+.loan_tabList .tabs li.on span{color:#ba0003;}
+
+.indBaike{float:left;width:390px;padding-right:10px;border-right:1px solid #f4f4f4;color:#bfd3f1;}
+.indBaike dl{height:33px;line-height:33px;overflow:hidden;}
+.indBaike dl.one{background:#fafafa;}
+.indBaike dt{float:left;width:70px;padding-right:5px;text-align:right;font-weight:bold;font-size:14px;color:#3b639f;}
+.indBaike a{color:#3b639f;}
+
+.indLoanPro{padding-left:10px;}
+.indLoanPro li{padding:6px 0;height:60px;line-height:30px;border-bottom:1px solid #f4f4f4;position:relative;}
+.indLoanPro li.end{border:0;}
+.indLoanPro h3{font-size:14px;font-weight:bold;color:#3b639f;}
+.indLoanPro h3 a{color:#3b639f;}
+.indLoanPro .btn{position:absolute;right:0;top:12px;width:34px;height:18px;line-height:18px;overflow:hidden;text-align:Center;color:#fff;background:#0098ae;}
+.indLoanPro p{height:30px;}
+.indLoanPro p span{display:block;float:left;width:49%;}
+.indLoanPro p em{font-weight:bold;color:#ba0003;font-style:normal;}
+
+.indTool{padding-left:10px;}
+.indTool li{float:left;line-height:32px;height:32px;width:144px;overflow:hidden;}
+.indTool li em{float:left;margin:13px 4px 0 0;display:block;width:6px;height:6px;line-height:6px;overflow:hidden;border-radius:3px;background:#e0e0e0;}
+
+.indYhdq{padding-left:10px;}
+.indYhdq li{float:left;width:142px;height:52px;overflow:hidden;padding:0 2px 9px 0;}
+.indYhdq li img{width:140px;height:50px;border:1px solid #e0e0e0;}
+
+
+.indCards{}
+.indCards li{float:left;padding:7px 10px;width:300px;}
+.indCards h3{line-height:30px;height:30px;overflow:hidden;font-size:14px;font-weight:bold;color:#3b639f;}
+.indCards h3 a{color:#3b639f;}
+.indCards .pic{float:left;width:105px;height:66px;margin-right:10px;}
+.indCards .desc{float:left;color:#ff6600;font:normal 12px/20px "microsoft yahei";width:165px;height:40px;overflow:hidden;}
+.indCards .pic{float:left;width:105px;height:66px;margin-right:10px;}
+.indCards .applyBtn{float:left;display:block;width:81px;height:24px;line-height:24px;font-weight:bold;color:#fff;text-align:center;margin-top:2px;border-radius:2px;background: -moz-linear-gradient(top, #32afc2, #1a9aad); background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #32afc2), color-stop(1, #1a9aad));filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#32afc2', endColorstr='#1a9aad', GradientType='0');}
+
+.indPrefer{}
+.indPrefer li{float:left;width:140px;height:94px;overflow:hidden;text-align:center;line-height:24px;padding:0 9px 0 10px;}
+.indPrefer li img{width:140px;height:70px;display:block;margin:0 auto;}
+
+
+/*lccp*/
+.indLccp{height:148px;border:1px solid #d9dee2;border-radius:3px;}
+.indLccp li{float:left;width:105px;height:148px;border-right:1px dotted #d9dee2;}
+.indLccp li.end{border-right:0;background:#fef6e9;}
+.indLccp li.two{background:#f4f9fd;}
+.indLccp li a{text-decoration:none;}
+.indLccp li .tit{height:36px;text-align:center;font:bold 12px/18px "microsoft yahei";padding:5px 0;background:#f0f5f7;border-bottom:1px solid #d9dee2;color:#3b639f;}
+.indLccp .time-limit{height:60px;padding-top:10px;}
+.indLccp .time-limit .nums{text-align:center;font-family:"microsoft yahei";font-size:12px;color:#999;height:40px;overflow:hidden;}
+.indLccp .time-limit .nums span{font:bold 16px/40px "arial";color:#3b639f;}
+.indLccp .time-limit .nums em{font-size:30px;color:#ba0003;}
+.indLccp .time-limit .sm{color:#ddd;padding:0 6px;}
+.indLccp .rate{color:#999;height:16px;line-height:16px;padding:5px 0 5px 10px;}
+.indLccp .rate i{display:inline-block;width:14px;height:16px;background:url(../img/lccp_icon.jpg);float:left;}
+
+/*huati*/
+.indHt{padding-left:10px;position:relative;}
+.indHt h3{height:24px;padding:8px 0;}
+.indHt h3 a{display:block;text-indent:-9999em;overflow:hidden;width:184px;height:24px;background:url(../img/indHt_icon.png) no-repeat 0 center;}
+.indHt .hd{position:absolute;right:0;top:8px;}
+.indHt .hd .up,.indHt .hd .down{position:absolute;width:21px;background:#fff;z-index:9999;text-align:center;cursor:pointer;padding:7px 0;top:0;border:1px solid #ededed;}
+.indHt .hd .up a,.indHt .hd .down a{display:block;margin:0 auto;width:18px;height:7px;font-size:14px;font-weight:900;text-decoration:none;overflow:hidden;}
+.indHt .hd .up a{line-height:14px;}
+.indHt .hd .down a{line-height:3px;}
+.indHt .hd .up{right:28px;}
+.indHt .hd .down{right:0;}
+
+.indHt li{height:75px;line-height:25px;overflow:hidden;padding-top:1px;}
+.indHt li img{float:left;width:120px;height:75px;margin:0 10px 0 0;}
+.indHt li .rBox{height:25px;overflow:hidden;}
+.indHt li span{color:#666;}
+.indHt li .date{float:right;}
+.indHt li h4{font:normal 14px/25px "microsoft yahei";color:#0055a8;display:inline;}
+.indHt li a{color:#0055a8;}
+.indHt li p{color:#999;}
+.indHt li p a{color:#ba0003;}
+.indHt li.pic{background:#f8f8f8;}
+.indHt li.pic .rBox{height:75px;}
+.indHt li.pic h4{display:block;}
+
+/* 20141222–¬‘ˆŒ““™’“ø® */
+.l_yc_title { width:287px; height:30px; line-height:30px;}
+.l_yc_title a { font-size:14px;font-family:"Œ¢»Ì—≈∫⁄";font-weight:bold; color:#333;}
+.l_zhaoka em,.l_zhaoka i { font-style:normal;}
+.l_zhaoka { width:290px;}
+.l_zhaoka p { float:left; width:290px; line-height:18px; height:18px; overflow:hidden; margin:2px 0px 8px;}
+.l_zhaoka p i { float:left; width:52px; height:18px; display:block; text-align:center;background:#367ea4; color:#fff; font-weight:bold;border-radius:3px; margin-right:10px;}
+.l_zhaoka p span { float:right; color:#2c66ba;}
+.l_zhaoka p a span { color:#2c66ba;}
+.l_zhaoka p a:hover span { color:#666;}
+.l_zhaoka a em { margin-right:12px; color:#999;}
+.l_zhaoka a:hover em { color:#333;}
+.l_zhaoka a b { margin-right:12px; color:#333;}
+.l_zhaoka a:hover b { color:#0781d5;}
+
+/*20160329ÃÌº””—«È¡¥Ω”—˘ Ω*/
+.friend_link{width:958px;margin:12px auto 0;border:1px solid #e8e8e8;border-top:2px solid #4c748d;}
+.friend_link div{height:30px;line-height:30px;padding-left:10px;font-size: 16px;font-weight: 600;color: #0f6384;border-bottom:1px solid #e8e8e8;}
+.friend_link p{padding:10px;line-height:24px;}
+.friend_link p a{margin-right:10px;}
+
