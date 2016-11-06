@@ -1,0 +1,56 @@
+.labeltxt {
+	width: 100%;
+	max-width: 960px;
+	margin: 0px auto;
+	background: #E3F5FF;
+}
+.labeltxt a {
+	display: block;
+	width: 10%;
+	height: 30px;
+	line-height: 29px;
+	text-align: center;
+	background: #E3F5FF;
+	color: #246EB1;
+	text-decoration: none;
+	font-size: 12px;
+	float: left;
+	overflow: hidden;
+	vertical-align: middle;
+	white-space: normal;
+}
+.labeltxt a b {
+	display: block;
+	height: 29px;
+	font-weight: normal;
+	border-bottom: 1px solid #FFF;
+	overflow: hidden;
+	border-left: 1px solid #FFF;
+}
+.labeltxt a:hover {
+	background: #CEEEFF;
+}
+table {
+	border-left: 1px solid #C4D5DF;
+	border-top: 1px solid #C4D5DF
+}
+.tbox td {
+	border-bottom: 1px solid #C4D5DF;
+	border-right: 1px solid #C4D5DF;
+	padding: 4px 0;
+	text-align: center;
+	color: #333;
+}
+.tbox th {
+	background: #F2F7FB;
+	border-bottom: 1px solid #C4D5DF;
+	border-right: 1px solid #C4D5DF;
+	font-weight: normal;
+	padding: 5px 0;
+	text-align: center;
+	color: #333;
+}
+.tbox table {
+	border-left: 1px solid #C4D5DF;
+	border-top: 1px solid #C4D5DF;
+}

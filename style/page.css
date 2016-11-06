@@ -115,49 +115,49 @@
 	margin:0px 2px;
 }
 /*---------- index ---------*/
-.index .bignews{
+.center .bignews{
 	width:424px;
 	height:192px;
 	float:right;
 	border:1px solid #BADAA1;
 	overflow:hidden;
 }
-.index .bignews a{
+.center .bignews a{
 	color:#000;
 }
-.index .bignews .onenews{
+.center .bignews .onenews{
 	margin:0 3px 0 3px;
 	padding:7px 6px;
 	border-bottom:1px dashed #EBEBEB;
 }
-.index .bignews .onenews h2{
+.center .bignews .onenews h2{
 	text-align:center;
 	display:block;
 	height:32px;
 	line-height:28px;
 }
-.index .bignews .onenews h2 a{
+.center .bignews .onenews h2 a{
 	font-size:16px;
 }
-.index .bignews .onenews p{
+.center .bignews .onenews p{
 	line-height:17px;
 	color:666;
 }
 
-.index .bignews div.newarticle{
+.center .bignews div.newarticle{
 	height:24px;
 	background:url(../images/new-article.gif) 8px 3px no-repeat;
 	font-size:0px;
 	color:#fff;
 }
 
-.index .bignews div.d1{
+.center .bignews div.d1{
 	padding:6px 10px;
 	clear:both;
 	width:406px;
 	overflow:hidden;
 }
-.index .bignews div.d1arc{
+.center .bignews div.d1arc{
 	margin-right:12px;
 	width:190px;
 	float:left;
@@ -165,37 +165,37 @@
 	line-height:24px;
 	overflow:hidden;
 }
-.index .bignews div.d1arc a {
+.center .bignews div.d1arc a {
 	
 }
-.index .bignews ul.c2{
+.center .bignews ul.c2{
 	width:416px;
 	padding:0px 4px 0px;
 	clear:both;
 	overflow:hidden;
 }
-.index .bignews ul.c2 a {
+.center .bignews ul.c2 a {
 	font-size:13px;
 }
-.index .flashnews{
+.center .flashnews{
 	width:280px;
 	height:192px;
 	overflow:hidden;
 	float:left;
 }
-.index .latestnews{
+.center .latestnews{
 	width:280px;
 	height:192px;
 	
 	float:left;
 }
-.index .latestnews dl dd{
+.center .latestnews dl dd{
 	padding:2px 5px;
 }
-.index .latestnews ul a{
+.center .latestnews ul a{
 	color:#000;
 }
-.index .picnews{
+.center .picnews{
 	width:712px;
 	float:left;
 	clear:both;
@@ -204,62 +204,62 @@
 	*margin-top:12px;
 	_margin-top:0px;
 }
-.index .listbox{
+.center .listbox{
 	width:720px;
 	overflow:hidden;
 	float:left;
 	clear:both;
 	overflow:hidden;
 }
-.index .listbox dl{
+.center .listbox dl{
 	width:352px;
 	margin-right:8px;
 	margin-top:2px;
 	float:left;
 }
-.index .listbox ul a{
+.center .listbox ul a{
 	color:#000;
 }
-.index .usercenter .tbox dd{
+.center .usercenter .tbox dd{
 	height:370px;
 	display:none;
 }
-.index .usercenter .tbox dd#loading{
+.center .usercenter .tbox dd#loading{
 	display:block;
 	text-align:center;
 	line-height:200px;
 	letter-spacing:2px;
 	color:#999999;
 }
-.index .userlogin{
+.center .userlogin{
 	padding-top:10px;
 }
-.index .userlogin .fb{
+.center .userlogin .fb{
 	height:37px;
 }
-.index .userlogin .fb span{
+.center .userlogin .fb span{
 	float:left;
 	width:60px;
 	text-align:right;
 	padding-right:6px;
 	color:#888;
 }
-.index .userlogin .fb img{
+.center .userlogin .fb img{
 	vertical-align:middle;
 	margin-left:5px;
 }
-.index .userlogin .submit{
+.center .userlogin .submit{
 	text-align:center;
 	padding-top:3px;
 }
-.index .userlogin .submit a{
+.center .userlogin .submit a{
 	color:#003300;
 	margin-left:7px;
 }
-.index .userinfo{
+.center .userinfo{
 	
 }
-.index .userinfo .welcome{
+.center .userinfo .welcome{
 	width:220px;
 	height:24px;
 	margin:12px auto;
@@ -270,11 +270,11 @@
 	text-indent:10px;
 	color:#000;
 }
-.index .userinfo .welcome strong{
+.center .userinfo .welcome strong{
 	color:#F60;
 	font-weight:bold;
 }
-.index .userinfo .userface{
+.center .userinfo .userface{
 	width:60px;
 	height:64px;
 	overflow:hidden;
@@ -282,12 +282,12 @@
 	padding-top:2px;
 	float:left;
 }
-.index .userinfo .userface a{
+.center .userinfo .userface a{
 	display:block;
 	margin:0px auto;
 	text-align:center;
 }
-.index .userinfo .userface a img{
+.center .userinfo .userface a img{
 	width:52px;
 	height:52px;
 	display:block;
@@ -295,23 +295,23 @@
 	padding:2px;
 	border:1px solid #DDD;
 }
-.index .userinfo .mylink{
+.center .userinfo .mylink{
 	width:144px;
 	float:left;
 	overflow:hidden;
 }
-.index .userinfo .mylink ul{
+.center .userinfo .mylink ul{
 }
-.index .userinfo .mylink ul li{
+.center .userinfo .mylink ul li{
 	width:72px;
 	float:left;
 	line-height:21px;
 	text-indent:12px;
 }
-.index .userinfo .mylink ul li a{
+.center .userinfo .mylink ul li a{
 	color:#000;	
 }
-.index .userinfo .uclink{
+.center .userinfo .uclink{
 	height:31px;
 	line-height:31px;
 	clear:both;
@@ -319,14 +319,14 @@
 	text-align:center;
 	color:#DDD;
 }
-.index .userinfo .uclink a{
+.center .userinfo .uclink a{
 	color:#690;
 	margin:0px 2px;
 }
-.index .latestlogin{
+.center .latestlogin{
 	padding-top:16px;
 }
-.index .latestlogin strong{
+.center .latestlogin strong{
 	width:102px;
 	padding-left:6px;
 	letter-spacing:1px;
@@ -337,24 +337,24 @@
 	position:relative;
 	z-index:5;
 }
-.index .latestlogin ul{
+.center .latestlogin ul{
 	width:224px;
 	border-top:1px solid #DDDDDD;
 	padding-top:20px;
 	z-index:3;
 	margin:-12px auto 0px;
 }
-.index .commend dl dd{
+.center .commend dl dd{
 	padding-top:0px;
 }
-.index .hot dl dd{
+.center .hot dl dd{
 	padding-top:0px;
 }
-.index .hot dl dd .c1 li{
+.center .hot dl dd .c1 li{
 	width:210px;
 	overflow:hidden;
 }
-.index .vote dl dd strong{
+.center .vote dl dd strong{
 	display:block;
 	line-height:27px;
 	padding-left:8px;
@@ -363,24 +363,24 @@
 	border-bottom:1px solid #DDDDDD;
 	margin:0px 4px;
 }
-.index .vote dl dd .fb{
+.center .vote dl dd .fb{
 	padding-top:10px;
 	height:21px;
 	padding-left:10px;
 	color:#555;
 }
-.index .vote dl dd .fb input{
+.center .vote dl dd .fb input{
 	margin-right:4px;
 }
-.index .vote dl dd .submit{
+.center .vote dl dd .submit{
 	text-align:center;
 	height:35px;
 	padding-top:8px;
 }
-.index .vote dl dd .submit button{
+.center .vote dl dd .submit button{
 	margin-right:10px;
 }
-.index .vote dl dd .submit a{
+.center .vote dl dd .submit a{
 	color:#003300
 }
 /*---------- channel ---------*/

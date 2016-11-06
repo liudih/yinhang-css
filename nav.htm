@@ -1,6 +1,6 @@
 <ul class="nav clearfix" id="nav">
     <li class="nLi ind0">
-        <h2><a href="http://www.yinhanglilv.net" target="_blank" title="首页">首页</a><iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe></h2>
+        <h2><a href="http://www.yinhanglilv.net" target="_blank" title="首页">首页</a></h2>
     </li>
     {dede:channelartlist typeid='top' row='11'} 
     <li class="nLi {dede:global name=itemindex runphp='yes'}if(@me==11){@me=' hot';}{/dede:global} ind{dede:field.typeid/}">
@@ -23,12 +23,11 @@
         <a href="http://www.yinhanglilv.net/dqck/" title="定期存款利率" target="_blank">定期存款利率</a> |
         <a href="http://www.yinhanglilv.net/reference_rate/" title="商业贷款利率" target="_blank">商业贷款利率</a>
     </div>
-<iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe></div>
+</div>
 <script type="text/javascript" src="{dede:global.cfg_cmspath/}/templets/cngold/js/jquery.SuperSlide.2.1.js"></script>
 <script type="text/javascript">
 	//获取当前导航在第几位
 	var theTypeid = 'ind{dede:field.typeid function="GetTopid(@me)"/}';
-	console.log(theTypeid);
 	var ind = 0;
 	$(".nav >li").each(function(i,e){
 		if($(e).hasClass(theTypeid)){
