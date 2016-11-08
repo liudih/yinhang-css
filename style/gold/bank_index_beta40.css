@@ -35,7 +35,7 @@
 .indWrapTit3 .tab03 a{width:106px;text-align:center;}
 
 .indNews{}
-.indNews li{font-size:14px;line-height:30px;height:30px;padding-left:12px;overflow:hidden;background:url(http://res.cngoldres.com/bank/img/bank_img.jpg) no-repeat 0 -703px;}
+.indNews li{font-size:14px;line-height:30px;height:30px;padding-left:12px;overflow:hidden;background:url(../../images/cngold/bank_img.jpg) no-repeat 0 -703px;}
 .indNews li.adv a{color:#ba0003;text-decoration:underline;font-weight:bold;}
 
 .indYW{border-top:1px solid #f0f0f0;}
@@ -51,7 +51,7 @@
 .indYW .ywEle li.one a{border-right:1px solid #333;padding:0 10px 0 0;}
 
 .indCard{background:#fafafa;}
-.indCard h2{font:normal 18px/36px "microsoft yahei";color:#fff;text-align:center; background:url(http://res.cngoldres.com/bank/img/bank_sprite.png) repeat-x 0 -1px; margin-bottom:4px;}
+.indCard h2{font:normal 18px/36px "microsoft yahei";color:#fff;text-align:center; background:url(../../images/cngold/bank_sprite.png) repeat-x 0 -1px; margin-bottom:4px;}
 .indCard .advWords{padding:4px 7px 4px 17px;}
 .indCard .advWords li{float:left;width:80px;height:40px;margin-right:10px;font:14px/40px "microsoft yahei";color:#3b639f;text-align:center;border:1px solid #dbe4eb;border-radius:4px;background: -moz-linear-gradient(top, #ffffff, #eff4f8); background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #eff4f8));filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eff4f8', GradientType='0');}
 
@@ -65,7 +65,7 @@
 .indCard .advCards .pic{float:left;width:105px;height:66px;margin-right:10px;}
 .indCard .advCards .desc{float:left;color:#ff6600;font:bold 12px/20px "microsoft yahei";width:165px;height:40px;overflow:hidden;}
 .indCard .advCards .pic{float:left;width:105px;height:66px;margin-right:10px;}
-.indCard .advCards .applyBtn{float:left;display:block;width:81px;height:24px;line-height:24px;font-weight:bold;color:#fff;text-align:center;margin-top:2px;border-radius:2px;background: -moz-linear-gradient(top, #32afc2, #1a9aad); background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #32afc2), color-stop(1, #1a9aad));filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#32afc2', endColorstr='#1a9aad', GradientType='0');}
+.indCard .advCards .applyBtn{float:left;display:block;width:81px;height:24px;line-height:24px;font-weight:bold;color:#fff;text-align:center;margin-top:2px;border-radius:2px;background: -moz-linear-gradient(top, #32afc2, #1a9aad); background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #32afc2), color-stop(1, #1a9aad));filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#32afc2', endColorstr='#1a9aad', GradientType='0');cursor:pointer;}
 
 .bank_tabList{padding:0 0 11px;height:28px;}
 .bank_tabList li{float:left;text-align:center;position:relative;}
@@ -93,7 +93,7 @@
 .bankNewAdv2 p strong{color:#0055a8;}
 
 .indNews2{}
-.indNews2 li{float:left;width:302px;font-size:14px;line-height:30px;height:30px;padding:0 10px 0 12px;overflow:hidden;background:url(http://res.cngoldres.com/bank/img/bank_img.jpg) no-repeat 0 -703px;}
+.indNews2 li{float:left;width:302px;font-size:14px;line-height:30px;height:30px;padding:0 10px 0 12px;overflow:hidden;background:url(../../images/cngold/bank_img.jpg) no-repeat 0 -703px;}
 .indNews2 li .name{color:#3b639f;margin-right:4px;}
 
 .indRWrap{border-top:2px solid #b8c1ce;border-left:1px solid #f4f4f4;}
@@ -116,7 +116,7 @@
 .indRList li a{color:#666;}
 
 .indRList2{width:299px;}
-.indRList2 li{line-height:30px;height:30px;overflow:hidden;padding-left:25px;float:left;width:124px;color:#666;background:url(../img/bank_sprite.png) no-repeat 10px -146px;}
+.indRList2 li{line-height:30px;height:30px;overflow:hidden;padding-left:25px;float:left;width:124px;color:#666;background:url(../../images/cngold/bank_sprite.png) no-repeat 10px -146px;}
 .indRList2 li img{float:left;width:18px;height:18px;margin:6px 6px 0 0;}
 .indRList2 li a{color:#666;}
 
@@ -126,18 +126,18 @@
 .cardSearch dl{height:40px;padding:0 15px;font-family:"Î¢ÈíÑÅºÚ";font-size:14px;}
 .cardSearch dt,.cardSearch dd{float:left;}
 .cardSearch dt{width:70px;text-align:right;line-height:26px;}
-.cardSearch .searchBody{height:26px;background:url(http://res.cngoldres.com/credit/img/arrow_box.png) no-repeat right 0;padding:0 24px 0 0;cursor:pointer;position:relative;}
-.cardSearch .searchBody input{height:24px;line-height:24px;background:url(http://res.cngoldres.com/credit/img/input_bg.png);border:0;padding:1px 3px 1px 6px;font-family:"Î¢ÈíÑÅºÚ";font-size:14px;}
+.cardSearch .searchBody{height:26px;background:url(../../images/cngold/arrow_box.png) no-repeat right 0;padding:0 24px 0 0;cursor:pointer;position:relative;}
+.cardSearch .searchBody input{height:24px;line-height:24px;background:url(../../images/cngold/input_bg.png);border:0;padding:1px 3px 1px 6px;font-family:"Î¢ÈíÑÅºÚ";font-size:14px;}
 .cardSearch .searchBody ul{position:absolute;left:0;top:26px;z-index:999;background:#EBEBEB;display:none;}
 .cardSearch .searchBody ul li{padding:0 10px;line-height:30px;cursor:pointer;}
-.cardSearch .searchBtn{display:block;width:244px;height:39px;background:#1c9caf url(http://res.cngoldres.com/credit/img/search_btn.png) no-repeat center center;border:0;margin:0 auto 16px;text-indent:-9999em;cursor:pointer;}
-.searBox3{background:url(http://res.cngoldres.com/credit/img/input_bg.png) right 0;padding-right:6px;}
-.searBox3 input{width:170px;height:24px;line-height:24px;background:url(http://res.cngoldres.com/credit/img/input_bg.png);border:0;padding:1px 3px 1px 6px;font-family:"Î¢ÈíÑÅºÚ";font-size:14px;}
+.cardSearch .searchBtn{display:block;width:244px;height:39px;background:#1c9caf url(../../images/cngold/search_btn.png) no-repeat center center;border:0;margin:0 auto 16px;text-indent:-9999em;cursor:pointer;}
+.searBox3{background:url(../../images/cngold/input_bg.png) right 0;padding-right:6px;}
+.searBox3 input{width:170px;height:24px;line-height:24px;background:url(../../images/cngold/input_bg.png);border:0;padding:1px 3px 1px 6px;font-family:"Î¢ÈíÑÅºÚ";font-size:14px;}
 .creditZt{line-height:20px;color:#666;padding:0 20px;}
 .creditZt a{color:#666;margin-right:10px;}
 
 .indNews3{padding-left:10px;}
-.indNews3 li{line-height:30px;height:30px;padding-left:12px;overflow:hidden;background:url(http://res.cngoldres.com/bank/img/bank_img.jpg) no-repeat 0 -703px;}
+.indNews3 li{line-height:30px;height:30px;padding-left:12px;overflow:hidden;background:url(../../images/cngold/bank_img.jpg) no-repeat 0 -703px;}
 .indNews3 li.adv a{color:#ba0003;text-decoration:underline;}
 
 .indRWrapTit2{line-height:40px;height:40px;overflow:hidden;padding-left:10px;}
@@ -147,7 +147,7 @@
 
 .cardCate{border-top:1px dotted #f4f4f4;padding:0px 10px 10px;}
 .cardCate h3{display:inline;padding:2px;background:#bdc4cb;font:normal 12px/18px "microsoft";color:#fff;}
-.cardCate li{float:left;line-height:30px;background:url(http://res.cngoldres.com/credit/img/dot_icon01.png) no-repeat 0 12px;padding-left:12px;width:57px;}
+.cardCate li{float:left;line-height:30px;background:url(../../images/cngold/dot_icon01.png) no-repeat 0 12px;padding-left:12px;width:57px;}
 .cardCate li a{color:#333;}
 .cardCate li.more a{color:#ccc;}
 
@@ -175,7 +175,7 @@
 .xykConTj .txtList h3 img{float:left;margin-right:4px;width:24px;}
 .xykConTj .txtList h3 a{color:#0055a8;}
 .xykConTj .txtList ul{padding:10px 0 0 10px;}
-.xykConTj .txtList li{line-height:24px;height:24px;overflow:hidden;padding-left:10px;background:url(http://res.cngoldres.com/credit/img/dot_icon01.png) no-repeat 0 10px;color:#666;}
+.xykConTj .txtList li{line-height:24px;height:24px;overflow:hidden;padding-left:10px;background:url(../../images/cngold/dot_icon01.png) no-repeat 0 10px;color:#666;}
 .xykConTj .txtList li a{color:#666;}
 .xykConTj .txtList strong{color:#ab0003;}
 .xykConTj .hotCard{float:right;width:480px;border-left:1px solid #efefef;}
@@ -185,7 +185,7 @@
 .indCard_list li img{display:block;margin:0 auto;}
 .indCard_list li h4{line-height:26px;height:26px;font-weight:normal;overflow:hidden;}
 .indCard_list li .desc{color:#ab0000;font-weight:bold;height:30px;line-height:30px;overflow:hidden;}
-.indCard_list .applyBtn{display:block;width:106px;height:33px;margin:1px auto 0;text-indent:-999em;background:url(../img/apply_btn01.png);}
+.indCard_list .applyBtn{display:block;width:106px;height:33px;margin:1px auto 0;text-indent:-999em;background:url(../../images/cngold/apply_btn01.png);}
 
 .indNews4{}
 .indNews4 li{margin-top:10px;}
@@ -202,7 +202,7 @@
 .indWyList{position:relative;height:114px;padding:5px 0 5px 40px;border:solid #efefef;border-width:1px 0;}
 .indWyList h3{float:left;width:16px;height:112px;padding:14px 7px 0;line-height:16px;background:#367ea4;text-align:center;color:#fff;font-weight:bold;position:absolute;left:0;top:-1px;}
 .indWyList h3 a{color:#fff;}
-.indWyList a.next{position:absolute;right:10px;top:48px;width:17px;height:29px;text-indent:-9999px;overflow:hidden;cursor:pointer;background:url(../img/bank_sprite.png) no-repeat -300px -76px;}
+.indWyList a.next{position:absolute;right:10px;top:48px;width:17px;height:29px;text-indent:-9999px;overflow:hidden;cursor:pointer;background:url(../../images/cngold/bank_sprite.png) no-repeat -300px -76px;}
 .indWyList a.next:hover{background-position:-317px -76px;}
 .indWyList .bd{float:left;}
 .indWyList ul{float:left;width:576px;}
@@ -225,13 +225,13 @@
 .knowWrap .hd03 li span{left:31px;}
 
 .indNews5{padding-left:10px;}
-.indNews5 li{line-height:30px;height:30px;padding:0 0 0 12px;overflow:hidden;background:url(http://res.cngoldres.com/bank/img/bank_img.jpg) no-repeat 0 -701px;}
+.indNews5 li{line-height:30px;height:30px;padding:0 0 0 12px;overflow:hidden;background:url(../../images/cngold/bank_img.jpg) no-repeat 0 -701px;}
 .indNews5 li a{color:#666;}
 .indNews5 li .name{color:#3b639f;margin-right:4px;}
 .indNews5 li .date{color:#999;float:right;margin-left:10px;}
 
 .indNews6{}
-.indNews6 li{float:left;width:313px;font-size:14px;line-height:30px;height:30px;padding-left:12px;overflow:hidden;background:url(http://res.cngoldres.com/bank/img/bank_img.jpg) no-repeat 0 -703px;}
+.indNews6 li{float:left;width:313px;font-size:14px;line-height:30px;height:30px;padding-left:12px;overflow:hidden;background:url(../../images/cngold/bank_img.jpg) no-repeat 0 -703px;}
 .indNews6 li.adv a{color:#ba0003;text-decoration:underline;}
 
 .loan_tabList{height:28px;background:#fafafa;}
@@ -297,12 +297,12 @@
 .indLccp .time-limit .nums em{font-size:30px;color:#ba0003;}
 .indLccp .time-limit .sm{color:#ddd;padding:0 6px;}
 .indLccp .rate{color:#999;height:16px;line-height:16px;padding:5px 0 5px 10px;}
-.indLccp .rate i{display:inline-block;width:14px;height:16px;background:url(../img/lccp_icon.jpg);float:left;}
+.indLccp .rate i{display:inline-block;width:14px;height:16px;background:url(../../images/cngold/lccp_icon.jpg);float:left;}
 
 /*huati*/
 .indHt{padding-left:10px;position:relative;}
 .indHt h3{height:24px;padding:8px 0;}
-.indHt h3 a{display:block;text-indent:-9999em;overflow:hidden;width:184px;height:24px;background:url(../img/indHt_icon.png) no-repeat 0 center;}
+.indHt h3 a{display:block;text-indent:-9999em;overflow:hidden;width:184px;height:24px;background:url(../../images/cngold/indHt_icon.png) no-repeat 0 center;}
 .indHt .hd{position:absolute;right:0;top:8px;}
 .indHt .hd .up,.indHt .hd .down{position:absolute;width:21px;background:#fff;z-index:9999;text-align:center;cursor:pointer;padding:7px 0;top:0;border:1px solid #ededed;}
 .indHt .hd .up a,.indHt .hd .down a{display:block;margin:0 auto;width:18px;height:7px;font-size:14px;font-weight:900;text-decoration:none;overflow:hidden;}
