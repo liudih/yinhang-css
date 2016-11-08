@@ -164,7 +164,9 @@ function applyAjax(id,url,mvcurl) {
 function closePop(){
 	$("#credit-popbox").hide();
 }
-
+function searchCard(){
+	console.log("searchCard");
+}
 $(document).ready(function(){
 	$("#select_choose").live('click',function(){
 		var choose_index=$("#select_choose").val();
@@ -180,6 +182,12 @@ $(document).ready(function(){
 			$("#decide_enter").hide();
 			$("#reminder").hide();
 			$(this).parent().parent().find("label.cfl").removeClass("check-pass");
+		}
+	});
+	$("#keywords").keydown(function(event){ 
+		if(event.keyCode==13){
+			searchCard();
+			return false;
 		}
 	});
 });
