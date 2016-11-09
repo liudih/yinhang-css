@@ -174,7 +174,7 @@ input,select,button{
 	height:36px;
 	float:left;
 	margin-left:0px;
-	overflow:hidden;
+	/*overflow:hidden;*/
 }
 .header .banner img{
 	width:660px;
