@@ -151,7 +151,7 @@
         <div class="indWrap3 mt10">
             <ul class="bank_tabList bank_tab01 clearfix">
             	{dede:channelartlist typeid='63' row='8'}
-                <li class=""><a href="{dede:field name='typeurl'/}" target="_blank" title="{dede:field name='typename'/}">{dede:field name='typename'/}</a><span>◆</span></li>
+                <li><a href="{dede:field name='typeurl'/}" target="_blank" title="{dede:field name='typename'/}">{dede:field name='typename'/}</a><span>◆</span></li>
                 {/dede:channelartlist}
             </ul>
             <div class="bd">
@@ -351,28 +351,13 @@
 				</div>
 				<div class="bd">
 					<ul>
-						{dede:arclist flag='f' row='4'}
-						<li class="pic">
-							<a href="http://bank.cngold.org/huati/c4467928.html" target="_blank" title="央行发布最严新规：支付宝和微信能挺过去吗？"><img src="https://res.cngoldres.com/upload/2016/1011/2566df82689713f4f8d6a66c5b16d994.jpg" alt="央行发布最严新规：支付宝和微信能挺过去吗？" /></a>
-							<div class="rBox">
-								<span></span>
-								<span class="date">2016-10-10</span>
-								<h4><a href="http://bank.cngold.org/huati/c4467928.html" target="_blank" title="央行发布最严新规：支付宝和微信能挺过去吗？">央行发布最严新规：支付宝和微信能挺过去吗？</a></h4>
-							</div>
-						</li>
+						{dede:arclist typeid='53' row='6' infolen='60'}
 						<li>
 							<div class="rBox">
-								<span>：</span>
-								<h4><a href="http://bank.cngold.org/huati/c4445983.html" target="_blank" title="银行迎来上市潮：邮政银行的股票 你买了吗？">银行迎来上市潮：邮政银行的股票 你买了吗？</a></h4>
+								<span class="date">[field:pubdate function="MyDate('m-d',@me)"/]</span>
+								<h4><a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:title/]</a></h4>
 							</div>
-							<p>邮政银行上市最新消息：错过了阿里巴巴，港交所这次再也没错过另一宇...<a href="http://bank.cngold.org/huati/c4445983.html" target="_blank">[话题详细]</a></p>
-						</li>
-						<li>
-							<div class="rBox">
-								<span>：</span>
-								<h4><a href="http://bank.cngold.org/huati/c4321892.html" target="_blank" title="禁投股市+取消分级 史上最严银行理财新规严在哪？">禁投股市+取消分级 史上最严银行理财新规严在哪？</a></h4>
-							</div>
-							<p>据了解，史上最严银行理财新规出炉了！金投网小编提醒，所谓“银行理...<a href="http://bank.cngold.org/huati/c4321892.html" target="_blank">[话题详细]</a></p>
+							<p>[field:info/]...<a href="[field:arcurl/]" target="_blank">[话题详细]</a></p>
 						</li>
 						{/dede:arclist}
 					</ul>
@@ -382,124 +367,640 @@
     </div>
 </div>
 
+<!-- 银行服务 -->
+<div class="clearfix mt10">
+    <div class="fl_l w650">
+        <div class="indWrapTit2">
+            <div class="more">
+                <a href="/wangyin/" target="_blank" title="网上银行">网上银行</a> - <a href="/lilvchangshi/" target="_blank" title="银行利率">银行利率</a> - <a href="/wangyin/" target="_blank" title="网上银行大全">网上银行大全</a>
+            </div>
+            <h2>银行服务</h2><span class="en">BANK SERVICES</span>
+        </div>
+        <div class="indWyList clearfix mt10">
+            <div class="hd">
+                <h3><a href="/wangyin/" target="_blank" title="网上银行大全">网上银行大全</a></h3>
+                <a class="next">></a>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li><a href="javascript:void(0);" target="_blank" title="广发银行网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bank_icon3.gif" alt="广发银行网上银行">广发银行网上银行</a></li>
+                    <li><a href="javascript:void(0);" target="_blank" title="兴业银行网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bank_icon19.gif" alt="兴业银行网上银行">兴业银行网上银行</a></li>
+                    <li><a href="javascript:void(0);" target="_blank" title="工商银行网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bank_icon5.gif" alt="工商银行网上银行">工商银行网上银行</a></li>
+                    <li><a href="javascript:void(0);" target="_blank" title="农业银行网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bank_icon14.gif" alt="农业银行网上银行">农业银行网上银行</a></li>
+                    <li><a href="javascript:void(0);" target="_blank" title="建设银行网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bank_icon9.gif" alt="建设银行网上银行">建设银行网上银行</a></li>
+                    <li><a href="javascript:void(0);" target="_blank" title="中国银行网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bank_icon22.gif" alt="中国银行网上银行">中国银行网上银行</a></li>
+                    <li><a href="javascript:void(0);" target="_blank" title="交通银行网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bank_icon10.gif" alt="交通银行网上银行">交通银行网上银行</a></li>
+                    <li><a href="javascript:void(0);" target="_blank" title="招商银行网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bank_icon24.gif" alt="招商银行网上银行">招商银行网上银行</a></li>
+                    <li><a href="javascript:void(0);" target="_blank" title="汇丰银行(中国)网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bi100.jpg" alt="汇丰银行(中国)网上银行" />汇丰银行(中国)网上银行</a></li>
+                    <li><a href="javascript:void(0);" target="_blank" title="周口银行网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bi101.jpg" alt="周口银行网上银行" />周口银行网上银行</a></li>
+                    <li><a href="javascript:void(0);" target="_blank" title="摩根大通银行网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bi102.jpg" alt="摩根大通银行网上银行" />摩根大通银行网上银行</a></li>
+                    <li><a href="javascript:void(0);" target="_blank" title="威海市商业银行网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bi103.jpg" alt="威海市商业银行网上银行" />威海市商业银行网上银行</a></li>
+                </ul>
+                <ul>
+                    <li><a href="javascript:void(0);" target="_blank" title="三菱东京日联银行网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bi104.gif" alt="三菱东京日联银行网上银行" />三菱东京日联银行网上银行</a></li>
+                    <li><a href="javascript:void(0);" target="_blank" title="台州市商业银行网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bi105.gif" alt="台州市商业银行网上银行" />台州市商业银行网上银行</a></li>
+                    <li><a href="javascript:void(0);" target="_blank" title="铁岭银行网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bi106.jpg" alt="铁岭银行网上银行" />铁岭银行网上银行</a></li>
+                    <li><a href="javascript:void(0);" target="_blank" title="曲靖市商业银行网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bi107.jpg" alt="曲靖市商业银行网上银行" />曲靖市商业银行网上银行</a></li>
+                    <li><a href="javascript:void(0);" target="_blank" title="芜湖扬子农村商业银行网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bi108.jpg" alt="芜湖扬子农村商业银行网上银行" />芜湖扬子农村商业银行网上银行</a></li>
+                    <li><a href="javascript:void(0);" target="_blank" title="广州市商业银行个人网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bi109.gif" alt="广州市商业银行个人网上银行" />广州市商业银行个人网上银行</a></li>
+                    <li><a href="javascript:void(0);" target="_blank" title="南阳银行网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bi110.jpg" alt="南阳银行网上银行" />南阳银行网上银行</a></li>
+                    <li><a href="javascript:void(0);" target="_blank" title="成都银行网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bi111.gif" alt="成都银行网上银行" />成都银行网上银行</a></li>
+                    <li><a href="javascript:void(0);" target="_blank" title="泰隆银行网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bi112.jpg" alt="泰隆银行网上银行" />泰隆银行网上银行</a></li>
+                    <li><a href="javascript:void(0);" target="_blank" title="齐商银行网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bi113.jpg" alt="齐商银行网上银行" />齐商银行网上银行</a></li>
+                    <li><a href="javascript:void(0);" target="_blank" title="成都农村商业银行网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bi114.jpg" alt="成都农村商业银行网上银行" />成都农村商业银行网上银行</a></li>
+                    <li><a href="javascript:void(0);" target="_blank" title="正信银行网上银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bi115.jpg" alt="正信银行网上银行" />正信银行网上银行</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 银行利息 -->
+        <div class="indWrap3">
+            <div class="indWrapTit3 mt10">
+                <div class="tabList tab02">
+                	{dede:channelartlist typeid='6' row='3'}
+	                <a href="{dede:field name='typeurl'/}" target="_blank" title="{dede:field name='typename'/}">{dede:field name='typename'/}</a>
+	                {/dede:channelartlist}
+                </div>
+            </div>
+            <div class="bd">
+            	{dede:channelartlist typeid='6' row='3'}            
+                <div class="mt10">
+                    <div class="clearfix">
+                    	{dede:arclist titlelen='60' limit='0,2'  infolen='40'}
+	                    <div class="bankNewAdv1 w320 [field:global name=autoindex runphp="yes"](@me==1)? @me="fl_l":@me="fl_r";[/field:global]">
+	                        <h3><a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:title/]</a></h3>
+	                        <p>[field:info/]...</p>
+	                    </div>
+	                    {/dede:arclist}
+	                </div>
+	                <ul class="indNews2 clearfix mt10">
+	                	{dede:arclist titlelen='60' limit='2,6'  infolen='40'}
+	                    <li>
+	                        <a href="[field:typeurl/] " target="_blank" title="[field:typename/]" class="name">[[field:typename/]]</a>
+	                        <a href="[field:arcurl/]" target="_blank" title="[field:title/]" >[field:title/]</a>
+	                    </li>
+	                    {/dede:arclist}
+					</ul>
+				</div>
+				{/dede:channelartlist}
+			</div>
+		</div>
+	</div>
+	<div class="fl_r w300">
+	    <div class="indRWrap">
+	        <div class="indRWrapTit2">
+	            <a href="/wangyin/" target="_blank" class="more">更多>></a>
+	            <h2><a href="/wangyin/" target="_blank" title="网上银行知识">网上银行知识</a></h2>
+	        </div>
+	        <div class="knowWrap">
+	            <div class="hd hd01">
+	                <ul class="clearfix">
+	                	{dede:channelartlist typeid='70,69,71,72' row='4'}
+	                    <li><a href="{dede:field name='typeurl'/}" target="_blank" title="{dede:field name='typename'/}">{dede:field name='typename' runphp='yes'}@me=mb_substr(@me, 2, mb_strlen(@me,'gbk'),'gbk');{/dede:field}</a><span>◆</span></li>
+	                    {/dede:channelartlist}
+	                </ul>
+	            </div>
+	            <div class="bd mt10">
+	            	{dede:channelartlist typeid='70,69,71,72' row='4'}
+	                <ul class="indNews5">
+	                	{dede:arclist titlelen='200' row='4'}
+	                    <li><a href="[field:arcurl/]" target="_blank" title="[field:title/]" >[field:title/]</a></li>
+	                    {/dede:arclist}
+	                </ul>
+	                {/dede:channelartlist}
+	            </div>
+	        </div>
+	        <div class="knowWrap mt10">
+	            <div class="hd hd01">
+	                <ul class="clearfix">
+	                	{dede:channelartlist typeid='73,74,75,76' row='4'}
+	                    <li><a href="{dede:field name='typeurl'/}" target="_blank" title="{dede:field name='typename'/}">{dede:field name='typename' runphp='yes'}@me=mb_substr(@me, 2, mb_strlen(@me,'gbk'),'gbk');{/dede:field}</a><span>◆</span></li>
+	                    {/dede:channelartlist}
+	                </ul>
+	            </div>
+	            <div class="bd mt10">
+	            	{dede:channelartlist typeid='73,74,75,76' row='4'}
+	                <ul class="indNews5">
+	                	{dede:arclist titlelen='200' row='4'}
+	                    <li><a href="[field:arcurl/]" target="_blank" title="[field:title/]" >[field:title/]</a></li>
+	                    {/dede:arclist}
+	                </ul>
+	                {/dede:channelartlist}
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</div>
+
+<!-- 银行业务 -->
+<div class="clearfix mt10">
+    <div class="fl_l w650">
+        <div class="indWrapTit2">
+            <div class="more">
+                <a href="/loan_rate/" target="_blank" title="银行信贷">银行信贷</a> - <a href="/loan_rate/" target="_blank" title="银行贷款">银行贷款</a>
+            </div>
+            <h2><a href="/loan_rate/" target="_blank" title="银行业务">银行业务</a></h2><span class="en">BANK BUSINESS</span>
+        </div>
+        <div class="loanWrap">
+            <div class="loan_tabList mt10">
+                <h3><a href="/loan_rate/" target="_blank" title="银行贷款">银行贷款</a></h3>
+                <ul class="tabs">
+                	{dede:channelartlist typeid='3' row='6'}
+                    <li><a href="{dede:field name='typeurl'/}" target="_blank" title="{dede:field name='typename'/}">{dede:field name='typename'/}</a><span>◆</span></li>
+                    {/dede:channelartlist}
+                </ul>
+            </div>
+            <div class="bd">
+            	{dede:channelartlist typeid='3' row='6'}
+	            <div class="mt10" style="display:none;">
+	                <div class="clearfix">
+	                	{dede:arclist limit='0,2' infolen='40'}
+	                        <div class="bankNewAdv1 w320 [field:global name=autoindex runphp="yes"](@me==1)? @me="fl_l":@me="fl_r";[/field:global]">
+	                            <h3><a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:title/]</a></h3>
+	                        	<p>[field:info/]...</p>
+	                        </div>
+	                    {/dede:arclist}
+	                </div>
+	                <ul class="indNews2 clearfix mt10">
+	                	{dede:arclist limit='2,8' infolen='40'}
+	                    <li><a href="[field:arcurl/]" target="_blank" title="[field:title/]" >[field:title/]</a></li>
+	                    {/dede:arclist}
+	                </ul>
+	            </div>
+	            {/dede:channelartlist}
+    		</div>
+</div>
+<div class="indWrap3">
+    <div class="indWrapTit3 mt10">
+        <div class="tabList tab03">
+            <a href="http://bank.cngold.org/yhxd/" target="_blank" title="银行信货">银行信货</a>
+            <a href="http://bank.cngold.org/ckyw/" target="_blank" title="存款业务">存款业务</a>
+            <a href="http://bank.cngold.org/zjyw/" target="_blank" title="中间业务">中间业务</a>
+            <a href="http://bank.cngold.org/fuli/" target="_blank" title="复利">复利</a>
+            <a href="http://bank.cngold.org/yzyh/" target="_blank" title="影子银行">影子银行</a>
+            <a href="http://bank.cngold.org/yhcy/" target="_blank" title="银行从业" class="end">银行从业</a>
+        </div>
+    </div>
+    <div class="bd">
+        <div class="mt10">
+            <ul class="indNews4 clearfix">
+                <!-- cache_skip_start -->
+	
+                    <li class="first w320 fl_l">
+                        <img src="https://res.cngoldres.com/upload/2016/0606/abd54fa8d096c27fd4f309ddb12eaf58.jpg" alt="信贷市场扑朔迷离 银行不得收紧群体贷款" />
+                        <h3><a href="http://bank.cngold.org/c/2016-06-06/c4150170.html" target="_blank" title="信贷市场扑朔迷离 银行不得收紧群体贷款" >信贷市场扑朔迷离 银行不得收紧群体贷款</a></h3>
+                        <p>根据数据来看，5月的信贷市场扑朔迷离。有券商预期5月新增信贷投...</p>
+                    </li>
+                    <li class="first w320 fl_r">
+                        <img src="https://res.cngoldres.com/upload/2016/0603/6c97a419a4675968447cea286e5644bb.jpg" alt="禾城农商银行完善创业创新信贷有效供给" />
+                        <h3><a href="http://bank.cngold.org/c/2016-06-03/c4148839.html" target="_blank" title="禾城农商银行完善创业创新信贷有效供给" >禾城农商银行完善创业创新信贷有效供给</a></h3>
+                        <p>昨日禾城农商银行为进一步完善创业创新信贷有效供给，截至4月底，...</p>
+                    </li>
+                    <!-- cache_skip_end -->
+            </ul>
+            <ul class="indNews6 mt10 clearfix">
+                <!-- cache_skip_start -->
+	
+                    <li><a href="http://bank.cngold.org/c/2016-06-24/c4191123.html" target="_blank" title="商用房贷款首付有银行拟提至七成" >商用房贷款首付有银行拟提至七成</a></li>
+                    <li><a href="http://bank.cngold.org/c/2016-05-19/c4110196.html" target="_blank" title="银行信贷资产质量不良贷款较去年四季度微升" >银行信贷资产质量不良贷款较去年四季度微升</a></li>
+                    <li><a href="http://bank.cngold.org/c/2016-05-17/c4103756.html" target="_blank" title="银行差异化信贷启动扶贫帮扶计划" >银行差异化信贷启动扶贫帮扶计划</a></li>
+                    <li><a href="http://bank.cngold.org/c/2016-05-16/c4101072.html" target="_blank" title="商业银行信贷业务风险防控" >商业银行信贷业务风险防控</a></li>
+                    <li><a href="http://bank.cngold.org/c/2016-05-09/c4087686.html" target="_blank" title="央行发布货币报告 引导优化银行信贷结构" >央行发布货币报告 引导优化银行信贷结构</a></li>
+                    <li><a href="http://bank.cngold.org/c/2016-04-29/c4068959.html" target="_blank" title="银行开始制定绿色信贷战略 助力低碳经济转型" >银行开始制定绿色信贷战略 助力低碳经济转型</a></li>
+                <!-- cache_skip_end -->
+            </ul>
+        </div>
+        <div class="mt10" style="display:none;">
+            <ul class="indNews4 clearfix">
+                <!-- cache_skip_start -->
+	
+                    <li class="first w320 fl_l">
+                        <img src="https://res.cngoldres.com/upload/2016/0803/134c3e7c0e851d2b770c79adbd811691.png" alt="农行贺州分行有效促进各项存款业务持续发展" />
+                        <h3><a href="http://bank.cngold.org/c/2016-08-03/c4293514.html" target="_blank" title="农行贺州分行有效促进各项存款业务持续发展" >农行贺州分行有效促进各项存款业务持续发展</a></h3>
+                        <p>农行贺州分行以开展“两学一做”学习教育活动为契机，持续强化“...</p>
+                    </li>
+                    <li class="first w320 fl_r">
+                        <img src="https://res.cngoldres.com/upload/2016/0603/3b1a7b1c32152cc296cb8071ac644dcd.jpg" alt="建行惠州市分行存款业务勇夺同业“十项第一”" />
+                        <h3><a href="http://bank.cngold.org/c/2016-06-03/c4148848.html" target="_blank" title="建行惠州市分行存款业务勇夺同业“十项第一”" >建行惠州市分行存款业务勇夺同业“十项第一”</a></h3>
+                        <p>近日建行惠州市分行成功实现首笔“智能跨行收款”业务签约突破，...</p>
+                    </li>
+                    <!-- cache_skip_end -->
+            </ul>
+            <ul class="indNews6 mt10 clearfix">
+                <!-- cache_skip_start -->
+	
+                    <li><a href="http://bank.cngold.org/c/2016-05-13/c4097720.html" target="_blank" title="存款保险制度实施一周年 钱放哪里最安全" >存款保险制度实施一周年 钱放哪里最安全</a></li>
+                    <li><a href="http://bank.cngold.org/c/2016-04-20/c4046740.html" target="_blank" title="农行惠州分行存款业务稳增 人民币日均增量15.3亿元" >农行惠州分行存款业务稳增 人民币日均增量15.3亿元</a></li>
+                    <li><a href="http://bank.cngold.org/c/2016-04-07/c4015880.html" target="_blank" title="老人因病去世亲人提取存款却被拒" >老人因病去世亲人提取存款却被拒</a></li>
+                    <li><a href="http://bank.cngold.org/c/2016-03-29/c3996892.html" target="_blank" title="灵石农商行实现首季存款业务翻三番" >灵石农商行实现首季存款业务翻三番</a></li>
+                    <li><a href="http://bank.cngold.org/c/2016-03-18/c3973689.html" target="_blank" title="东莞存款余额重回万亿以上" >东莞存款余额重回万亿以上</a></li>
+                    <li><a href="http://bank.cngold.org/c/2016-03-15/c3965373.html" target="_blank" title="日本3·11大地震受灾县存款增加" >日本3·11大地震受灾县存款增加</a></li>
+                <!-- cache_skip_end -->
+            </ul>
+        </div>
+        <div class="mt10" style="display:none;">
+            <ul class="indNews4 clearfix">
+                <!-- cache_skip_start -->
+	
+                    <li class="first w320 fl_l">
+                        <img src="https://res.cngoldres.com/upload/2016/0803/d38865dc5c8bdcc09e4654966d35c141.png" alt="银行业绩增速或放缓 预计中间业务将增长" />
+                        <h3><a href="http://bank.cngold.org/c/2016-08-03/c4293557.html" target="_blank" title="银行业绩增速或放缓 预计中间业务将增长" >银行业绩增速或放缓 预计中间业务将增长</a></h3>
+                        <p>分析人士认为，目前银行业各项改革加快推进，将提升银行应对挑战...</p>
+                    </li>
+                    <li class="first w320 fl_r">
+                        <img src="https://res.cngoldres.com/upload/2016/0603/f4bad786ae708f21ba8f8a74863aae8b.jpg" alt="建行聊城分行差异化发展提升中间业务发展能力" />
+                        <h3><a href="http://bank.cngold.org/c/2016-06-03/c4148863.html" target="_blank" title="建行聊城分行差异化发展提升中间业务发展能力" >建行聊城分行差异化发展提升中间业务发展能力</a></h3>
+                        <p>2016年建行聊城分行中间业务将继续坚持“轻资本、集约性、创新型...</p>
+                    </li>
+                    <!-- cache_skip_end -->
+            </ul>
+            <ul class="indNews6 mt10 clearfix">
+                <!-- cache_skip_start -->
+	
+                    <li><a href="http://bank.cngold.org/c/2016-04-28/c4065455.html" target="_blank" title="建行滨州分行借助平台拓宽中间业务发展" >建行滨州分行借助平台拓宽中间业务发展</a></li>
+                    <li><a href="http://bank.cngold.org/c/2016-04-20/c4044069.html" target="_blank" title="银行利润跌至个位 中间业务能否成“救兵”" >银行利润跌至个位 中间业务能否成“救兵”</a></li>
+                    <li><a href="http://bank.cngold.org/c/2016-04-07/c4015916.html" target="_blank" title="中间业务或成银行利润增长重要途径" >中间业务或成银行利润增长重要途径</a></li>
+                    <li><a href="http://bank.cngold.org/c/2016-04-02/c4007043.html" target="_blank" title="中间业务能否扛起银行利润增长的大旗" >中间业务能否扛起银行利润增长的大旗</a></li>
+                    <li><a href="http://bank.cngold.org/c/2016-03-29/c3996932.html" target="_blank" title="刷卡手续费有变数 银行中间业务收益受损" >刷卡手续费有变数 银行中间业务收益受损</a></li>
+                    <li><a href="http://bank.cngold.org/c/2016-03-18/c3974514.html" target="_blank" title="商业银行中间业务收入占比仍偏低" >商业银行中间业务收入占比仍偏低</a></li>
+                <!-- cache_skip_end -->
+            </ul>
+        </div>
+        <ul class="indNews6 clearfix" style="display:none;">
+	
+            <li><a href="http://bank.cngold.org/c/2016-07-18/c4243691.html" target="_blank" title="真正的价值投资是稳定而可靠的复利回报" >真正的价值投资是稳定而可靠的复利回报</a></li>
+            <li><a href="http://bank.cngold.org/c/2014-07-24/c2666075.html" target="_blank" title="88财富网复利系列产品新鲜出炉" >88财富网复利系列产品新鲜出炉</a></li>
+            <li><a href="http://bank.cngold.org/c/2014-07-09/c2637667.html" target="_blank" title="理财和复利的关系" >理财和复利的关系</a></li>
+            <li><a href="http://bank.cngold.org/c/2014-06-13/c2595594.html" target="_blank" title="美国养老金计划:利用复利你将获得更多的财富" >美国养老金计划:利用复利你将获得更多的财富</a></li>
+            <li><a href="http://bank.cngold.org/c/2014-06-11/c2591243.html" target="_blank" title="复利投资的价值和意义" >复利投资的价值和意义</a></li>
+            <li><a href="http://bank.cngold.org/c/2014-06-06/c2584655.html" target="_blank" title="坚持去追逐复利 你终将有钱" >坚持去追逐复利 你终将有钱</a></li>
+            <li><a href="http://bank.cngold.org/c/2014-06-06/c2584650.html" target="_blank" title="投资理财 利用复利25年攒够100万元" >投资理财 利用复利25年攒够100万元</a></li>
+            <li><a href="http://bank.cngold.org/c/2014-05-16/c2553255.html" target="_blank" title="如何利用复利投资理财" >如何利用复利投资理财</a></li>
+            <li><a href="http://bank.cngold.org/c/2014-05-16/c2553214.html" target="_blank" title="莫让复利踩中投资地雷" >莫让复利踩中投资地雷</a></li>
+            <li><a href="http://bank.cngold.org/c/2014-05-16/c2553186.html" target="_blank" title="理财放长线 复利钓大鱼" >理财放长线 复利钓大鱼</a></li>
+            <li><a href="http://bank.cngold.org/c/2014-05-16/c2553017.html" target="_blank" title="百万富翁养成计划:从投资复利开始" >百万富翁养成计划:从投资复利开始</a></li>
+            <li><a href="http://bank.cngold.org/c/2014-05-16/c2552993.html" target="_blank" title="投资理财的有些潜台词你不可不知" >投资理财的有些潜台词你不可不知</a></li>
+        </ul>
+        <ul class="indNews6 clearfix" style="display:none;">
+	
+            <li><a href="http://bank.cngold.org/c/2016-08-25/c4356482.html" target="_blank" title="现在大部分机构更多是用影子银行的模式" >现在大部分机构更多是用影子银行的模式</a></li>
+            <li><a href="http://bank.cngold.org/c/2016-08-17/c4334417.html" target="_blank" title="回顾年度报告 影子银行存在哪些风险" >回顾年度报告 影子银行存在哪些风险</a></li>
+            <li><a href="http://bank.cngold.org/c/2016-08-08/c4303884.html" target="_blank" title="影子银行监管新导向来袭" >影子银行监管新导向来袭</a></li>
+            <li><a href="http://bank.cngold.org/c/2016-08-03/c4290196.html" target="_blank" title="曾经被影子银行打败的房贷 如今香饽饽" >曾经被影子银行打败的房贷 如今香饽饽</a></li>
+            <li><a href="http://bank.cngold.org/c/2016-07-26/c4265432.html" target="_blank" title="影子银行风险阳光化 刻不容缓" >影子银行风险阳光化 刻不容缓</a></li>
+            <li><a href="http://bank.cngold.org/c/2016-07-26/c4263845.html" target="_blank" title="各种类型影子银行产品 存在较大风险隐患" >各种类型影子银行产品 存在较大风险隐患</a></li>
+            <li><a href="http://bank.cngold.org/c/2016-07-18/c4243679.html" target="_blank" title="整个财富管理行业 存在一种影子银行的色彩" >整个财富管理行业 存在一种影子银行的色彩</a></li>
+            <li><a href="http://bank.cngold.org/c/2016-05-23/c4117205.html" target="_blank" title="影子银行体系规模放大对金融体系风险" >影子银行体系规模放大对金融体系风险</a></li>
+            <li><a href="http://bank.cngold.org/c/2016-05-06/c4083157.html" target="_blank" title="债市违约风险进入阶段性高点 撕开影子银行风险一角" >债市违约风险进入阶段性高点 撕开影子银行风险一角</a></li>
+            <li><a href="http://bank.cngold.org/c/2015-12-23/c3797744.html" target="_blank" title="影子银行风险涉及各大发达经济体：欧美风险远超中国" >影子银行风险涉及各大发达经济体：欧美风险远超中国</a></li>
+            <li><a href="http://bank.cngold.org/c/2015-12-23/c3797723.html" target="_blank" title="银行业产生竞争性反应 影子银行增速在2016年将会放缓" >银行业产生竞争性反应 影子银行增速在2016年将会放缓</a></li>
+            <li><a href="http://bank.cngold.org/c/2015-12-23/c3797703.html" target="_blank" title="影子银行整体步伐收缩明显：中国影子银行规模是GDP的100%" >影子银行整体步伐收缩明显：中国影子银行规模是GDP的100%</a></li>
+        </ul>
+        <ul class="indNews6 clearfix" style="display:none;">
+	
+            <li><a href="http://bank.cngold.org/c/2016-11-02/c4557077.html" target="_blank" title="2016年中国工商银行厦门分行社会招聘公告" >2016年中国工商银行厦门分行社会招聘公告</a></li>
+            <li><a href="http://bank.cngold.org/c/2016-11-02/c4557022.html" target="_blank" title="广发银行总行本部2017校园招聘面试通知" >广发银行总行本部2017校园招聘面试通知</a></li>
+            <li><a href="http://bank.cngold.org/c/2016-11-02/c4556956.html" target="_blank" title="2016年民生银行上海分行招聘" >2016年民生银行上海分行招聘</a></li>
+            <li><a href="http://bank.cngold.org/c/2016-11-02/c4556841.html" target="_blank" title="2016年华夏银行长春分行招聘启事" >2016年华夏银行长春分行招聘启事</a></li>
+            <li><a href="http://bank.cngold.org/c/2016-11-01/c4551879.html" target="_blank" title="2017年中国银行宁波市分行校园招聘" >2017年中国银行宁波市分行校园招聘</a></li>
+            <li><a href="http://bank.cngold.org/c/2016-11-01/c4551680.html" target="_blank" title="2017年中国银行辽宁省分行校园招聘" >2017年中国银行辽宁省分行校园招聘</a></li>
+            <li><a href="http://bank.cngold.org/c/2016-11-01/c4551526.html" target="_blank" title="2017年中国银行上海市分行校园招聘" >2017年中国银行上海市分行校园招聘</a></li>
+            <li><a href="http://bank.cngold.org/c/2016-10-31/c4546705.html" target="_blank" title="2016年杭州银行柜员岗位招聘启事" >2016年杭州银行柜员岗位招聘启事</a></li>
+            <li><a href="http://bank.cngold.org/c/2016-10-31/c4546518.html" target="_blank" title="2017年中信银行杭州分行校园招聘" >2017年中信银行杭州分行校园招聘</a></li>
+            <li><a href="http://bank.cngold.org/c/2016-10-31/c4546378.html" target="_blank" title="2017年中信银行太原分行校园招聘" >2017年中信银行太原分行校园招聘</a></li>
+            <li><a href="http://bank.cngold.org/c/2016-10-31/c4546343.html" target="_blank" title="2017年兴业银行莆田分行校园招聘" >2017年兴业银行莆田分行校园招聘</a></li>
+            <li><a href="http://bank.cngold.org/c/2016-10-31/c4546168.html" target="_blank" title="2017年华夏银行长春分行校园招聘" >2017年华夏银行长春分行校园招聘</a></li>
+        </ul>
+    </div>
+</div>
+<div class="indWrapTit2 mt10">
+    <h2><a href="http://bank.cngold.org/baike/" target="_blank" title="银行百科">银行百科</a></h2><span class="en">BANK ENCYCLOPEDIA</span>
+</div>
+<div class="clearfix mt10">
+    <div class="indBaike">
+        <dl class="one">
+        <dt><a href="http://bank.cngold.org/yhjjbk/" target="_blank" title="银行简介百科">银行简介</a></dt>
+	
+        <dd class="fl_l">
+            <a href="http://bank.cngold.org/c/2014-05-13/c2545945.html" target="_blank" title="复利计息" >复利计息</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/c/2014-05-13/c2545931.html" target="_blank" title="复利投资" >复利投资</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/c/2014-05-13/c2545779.html" target="_blank" title="单利和复利" >单利和复利</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/c/2014-05-06/c2534479.html" target="_blank" title="儿童银行卡" >儿童银行卡</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/c/2014-05-06/c2534439.html" target="_blank" title="银行卡克隆" >银行卡克隆</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/c/2014-05-04/c2530244.html" target="_blank" title="支付宝卡通" >支付宝卡通</a>
+        </dd>
+    </dl>
+        <dl>
+        <dt><a href="http://bank.cngold.org/yhywbk/" target="_blank" title="银行业务百科">银行业务</a></dt>
+	
+        <dd class="fl_l">
+            <a href="http://bank.cngold.org/yhywbk/c2829781.html" target="_blank" title="银行职位有哪些" >银行职位有哪些</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhywbk/c2829760.html" target="_blank" title="农行星期六上班吗" >农行星期六上班吗</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhywbk/c2829750.html" target="_blank" title="股份制银行排名" >股份制银行排名</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhywbk/c2829738.html" target="_blank" title="投资风险有哪些" >投资风险有哪些</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhywbk/c2829727.html" target="_blank" title="上班族怎样投资理财" >上班族怎样投资理财</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhywbk/c2828862.html" target="_blank" title="建行银行网站打不开" >建行银行网站打不开</a>
+        </dd>
+    </dl>
+        <dl class="one">
+        <dt><a href="http://bank.cngold.org/wsyhbk/" target="_blank" title="网上银行百科">网上银行</a></dt>
+	
+        <dd class="fl_l">
+            <a href="http://bank.cngold.org/wsyhbk/c2831524.html" target="_blank" title="农行网银怎么转账" >农行网银怎么转账</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/wsyhbk/c2831456.html" target="_blank" title="网银怎么转账到别人的支付宝" >网银怎么转账到别人的支付宝</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/wsyhbk/c2831401.html" target="_blank" title="网银怎么转账给支付宝" >网银怎么转账给支付宝</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/wsyhbk/c2829441.html" target="_blank" title="ie11农行网银不能用" >ie11农行网银不能用</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/wsyhbk/c2829406.html" target="_blank" title="win7农行网银不能用" >win7农行网银不能用</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/wsyhbk/c2829371.html" target="_blank" title="网银不能用怎么办" >网银不能用怎么办</a>
+        </dd>
+    </dl>
+        <dl>
+        <dt><a href="http://bank.cngold.org/sjyhbk/" target="_blank" title="手机银行百科">手机银行</a></dt>
+	
+        <dd class="fl_l">
+            <a href="http://bank.cngold.org/sjyhbk/c2829183.html" target="_blank" title="怎么登陆手机银行" >怎么登陆手机银行</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/sjyhbk/c2829120.html" target="_blank" title="工行手机银行怎么注册" >工行手机银行怎么注册</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/sjyhbk/c2829081.html" target="_blank" title="建行手机银行授权码收不到" >建行手机银行授权码收不到</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/sjyhbk/c2829049.html" target="_blank" title="建行手机银行登录密码忘记怎么办" >建行手机银行登录密码忘记怎么办</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/sjyhbk/c2829004.html" target="_blank" title="工行手机银行怎么登陆" >工行手机银行怎么登陆</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/sjyhbk/c2813507.html" target="_blank" title="招行手机银行转账限额设置" >招行手机银行转账限额设置</a>
+        </dd>
+    </dl>
+        <dl class="one">
+        <dt><a href="http://bank.cngold.org/yhfybk/" target="_blank" title="银行费用百科">银行费用</a></dt>
+	
+        <dd class="fl_l">
+            <a href="http://bank.cngold.org/yhfybk/c2815749.html" target="_blank" title="银行卡年费怎么取消" >银行卡年费怎么取消</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhfybk/c2813290.html" target="_blank" title="银行卡透支额度" >银行卡透支额度</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhfybk/c2813081.html" target="_blank" title="办邮政银行卡多少钱" >办邮政银行卡多少钱</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhfybk/c2810578.html" target="_blank" title="银行卡跨行转账手续费" >银行卡跨行转账手续费</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhfybk/c2810523.html" target="_blank" title="银行卡申请免年费" >银行卡申请免年费</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhfybk/c2806570.html" target="_blank" title="什么银行卡不收年费" >什么银行卡不收年费</a>
+        </dd>
+    </dl>
+        <dl>
+        <dt><a href="http://bank.cngold.org/yhrwbk/" target="_blank" title="银行人物百科">银行人物</a></dt>
+	
+        <dd class="fl_l">
+            <a href="http://bank.cngold.org/yhrwbk/c2816456.html" target="_blank" title="银行大堂经理招聘要求" >银行大堂经理招聘要求</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhrwbk/c2805950.html" target="_blank" title="银行信贷员工作内容" >银行信贷员工作内容</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhrwbk/c2805924.html" target="_blank" title="银行柜员工作内容是什么" >银行柜员工作内容是什么</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhrwbk/c2803206.html" target="_blank" title="中国人民银行行长是谁？" >中国人民银行行长是谁？</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhrwbk/c2803159.html" target="_blank" title="工商银行行长是谁？" >工商银行行长是谁？</a>
+        </dd>
+    </dl>
+        <dl class="one">
+        <dt><a href="http://bank.cngold.org/yhjgbk/" target="_blank" title="银行监管百科">银行监管</a></dt>
+	
+        <dd class="fl_l">
+            <a href="http://bank.cngold.org/yhjgbk/c2813540.html" target="_blank" title="商业银行市场风险有哪些" >商业银行市场风险有哪些</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhjgbk/c2808121.html" target="_blank" title="中央银行职能是哪些" >中央银行职能是哪些</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhjgbk/c2805941.html" target="_blank" title="中国人民银行职能是什么" >中国人民银行职能是什么</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhjgbk/c2805939.html" target="_blank" title="银监会职责是什么" >银监会职责是什么</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhjgbk/c2805938.html" target="_blank" title="银行业监督管理办法" >银行业监督管理办法</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhjgbk/c2803345.html" target="_blank" title="银行业监管的意义" >银行业监管的意义</a>
+        </dd>
+    </dl>
+        <dl>
+        <dt><a href="http://bank.cngold.org/yhsybk/" target="_blank" title="银行术语百科">银行术语</a></dt>
+	
+        <dd class="fl_l">
+            <a href="http://bank.cngold.org/yhsybk/c2829774.html" target="_blank" title="银行信用等级怎么规定" >银行信用等级怎么规定</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhsybk/c2829770.html" target="_blank" title="什么是企业银行" >什么是企业银行</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhsybk/c2816482.html" target="_blank" title="三大政策性银行是哪些" >三大政策性银行是哪些</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhsybk/c2816472.html" target="_blank" title="政策性银行有哪些" >政策性银行有哪些</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhsybk/c2816462.html" target="_blank" title="国际银行是什么" >国际银行是什么</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhsybk/c2816377.html" target="_blank" title="什么是投资公司" >什么是投资公司</a>
+        </dd>
+    </dl>
+        <dl class="one">
+        <dt><a href="http://bank.cngold.org/yhkbk/" target="_blank" title="银行卡百科">银行卡</a></dt>
+	
+        <dd class="fl_l">
+            <a href="http://bank.cngold.org/yhkbk/c2837509.html" target="_blank" title="余额宝转出限额设置" >余额宝转出限额设置</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhkbk/c2837501.html" target="_blank" title="余额宝怎么转账到别人的银行卡" >余额宝怎么转账到别人的银行卡</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhkbk/c2837494.html" target="_blank" title="银行卡转入余额宝要手续费吗" >银行卡转入余额宝要手续费吗</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhkbk/c2837435.html" target="_blank" title="支付宝账户余额怎么转到银行卡" >支付宝账户余额怎么转到银行卡</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhkbk/c2837427.html" target="_blank" title="余额宝转入转出限额" >余额宝转入转出限额</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://bank.cngold.org/yhkbk/c2837394.html" target="_blank" title="余额宝转出到账时间" >余额宝转出到账时间</a>
+        </dd>
+    </dl>
+</div>
+<div class="fl_r w240">
+    <ul class="indNews">
+	
+        <li><a href="http://bank.cngold.org/yhdq/c4577615.html" target="_blank" title="什么是银行睡眠卡" >什么是银行睡眠卡</a></li>
+        <li><a href="http://bank.cngold.org/yhdq/c4577609.html" target="_blank" title="银行卡没用会自动注销吗" >银行卡没用会自动注销吗</a></li>
+        <li><a href="http://bank.cngold.org/yhdq/c4577606.html" target="_blank" title="银行卡有欠费能注销吗" >银行卡有欠费能注销吗</a></li>
+        <li><a href="http://bank.cngold.org/yhdq/c4577599.html" target="_blank" title="银行从业资格考试几分合格" >银行从业资格考试几分合格</a></li>
+        <li><a href="http://bank.cngold.org/yhdq/c4576961.html" target="_blank" title="不同支付宝能绑定同张银行卡吗" >不同支付宝能绑定同张银行卡吗</a></li>
+        <li><a href="http://bank.cngold.org/yhdq/c4576782.html" target="_blank" title="民间借贷不能超过银行利息多少" >民间借贷不能超过银行利息多少</a></li>
+        <li><a href="http://bank.cngold.org/yhdq/c4576681.html" target="_blank" title="银行交罚款什么时候清除" >银行交罚款什么时候清除</a></li>
+        <li><a href="http://bank.cngold.org/yhdq/c4575879.html" target="_blank" title="银行职业生涯规划怎么写" >银行职业生涯规划怎么写</a></li>
+        <li><a href="http://bank.cngold.org/yhdq/c4573099.html" target="_blank" title="银行短信通知服务费要多少" >银行短信通知服务费要多少</a></li>
+        <li><a href="http://bank.cngold.org/yhdq/c4573063.html" target="_blank" title="银行现在有存款指标吗" >银行现在有存款指标吗</a></li>
+    </ul>
+</div>
+</div>
+</div>
+<div class="fl_r w300">
+    <div class="indRWrap">
+        <div class="indRWrapTit2">
+            <a href="http://loan.cngold.org/product/" target="_blank" class="more">更多>></a>
+            <h2><a href="http://loan.cngold.org/product/" target="_blank" title="热门贷款产品">热门贷款产品</a></h2>
+        </div>
+        <!-- ssi begin -->
+        <ul class="indLoanPro">
+	          <li>
+              <h3><a href="http://loan.cngold.org/l_product_916.htm" target="_blank">个人信用消费贷款</a></h3>
+              <a href="http://loan.cngold.org/l_product_916.htm" target="_blank" class="btn">申请</a>
+              <p>
+                  <span>额度：<em>
+                      10-50万
+                  </em></span>
+                  <span>利率：<em>0%</em></span>
+              </p>
+          </li>
+          <li>
+              <h3><a href="http://loan.cngold.org/l_product_498.htm" target="_blank">水木润泽车贷</a></h3>
+              <a href="http://loan.cngold.org/l_product_498.htm" target="_blank" class="btn">申请</a>
+              <p>
+                  <span>额度：<em>
+                      10-50万
+                  </em></span>
+                  <span>利率：<em>3%</em></span>
+              </p>
+          </li>
+          <li>
+              <h3><a href="http://loan.cngold.org/l_product_509.htm" target="_blank">闵沪房贷</a></h3>
+              <a href="http://loan.cngold.org/l_product_509.htm" target="_blank" class="btn">申请</a>
+              <p>
+                  <span>额度：<em>
+                      50万以上
+                  </em></span>
+                  <span>利率：<em>1.25%</em></span>
+              </p>
+          </li>
+</ul>
+        <!-- ssi end -->
+    </div>
+    <div class="indRWrap mt10">
+        <div class="indRWrapTit2">
+            <a href="http://www.cngold.org/tool/21275.html" target="_blank" class="more">更多>></a>
+            <h2><a href="http://www.cngold.org/tool/21275.html" target="_blank" title="银行实用理财工具">银行实用理财工具</a></h2>
+        </div>
+        <div class="knowWrap">
+            <div class="hd hd02">
+                <ul class="clearfix">
+                    <li>存款计算器<span>◆</span></li>
+                    <li>信用卡计算器<span>◆</span></li>
+                    <li>贷款计算器<span>◆</span></li>
+                </ul>
+            </div>
+            <div class="bd mt10">
+                <ul class="indTool clearfix">
+                    <li><em></em><a href="http://www.cngold.org/tool/21254.html">五险一金计算器</a></li>
+                    <li><em></em><a href="http://www.cngold.org/tool/21233.html">税后工资计算器</a></li>
+                    <li><em></em><a href="http://www.cngold.org/tool/21275.html">个人所得税计算器</a></li>
+                    <li><em></em><a href="http://www.cngold.org/tool/21232.html">家庭月度收支计算器</a></li>
+                    <li><em></em><a href="http://www.cngold.org/tool/21231.html">期间收益和年化收益转换</a></li>
+                    <li><em></em><a href="http://www.cngold.org/tool/21279.html">通货膨胀影响投资计算器</a></li>
+                    <li><em></em><a href="http://www.cngold.org/tool/21278.html">通货膨胀影响消费计算器</a></li>
+                    <li><em></em><a href="http://www.cngold.org/tool/21230.html">投资收益计算器</a></li>
+                </ul>
+                <ul class="indTool clearfix">
+                    <li><em></em><a href="http://credit.cngold.org/tool_yijiaokuan.html" target="_blank">溢缴款领回手续费</a></li>
+                    <li><em></em><a href="http://credit.cngold.org/tool_fenqifukuan.html" target="_blank">分期付款计算器</a></li>
+                    <li><em></em><a href="http://credit.cngold.org/tool_xunhuanlixi.html" target="_blank">循环利息计算器</a></li>
+                    <li><em></em><a href="http://credit.cngold.org/tool_zhinajin.html" target="_blank">滞纳金计算器</a></li>
+                    <li><em></em><a href="http://credit.cngold.org/tool_chaoxianfei.html" target="_blank">超限费计算器</a></li>
+                </ul>
+                <ul class="indTool clearfix">
+                    <li><em></em><a href="http://news.loan.cngold.org/jisuanqi/qcdk.html" target="_blank">汽车贷款计算器</a></li>
+                    <li><em></em><a href="http://news.loan.cngold.org/jisuanqi/gjjdk.html" target="_blank">公积金贷款计算器</a></li>
+                    <li><em></em><a href="http://news.loan.cngold.org/jisuanqi/esfdk.html" target="_blank">二手房贷款计算器</a></li>
+                    <li><em></em><a href="http://news.loan.cngold.org/jisuanqi/gfnlpg.html" target="_blank">购房能力评估计算器</a></li>
+                    <li><em></em><a href="http://news.loan.cngold.org/jisuanqi/fwdk.html" target="_blank">房屋贷款计算器</a></li>
+                    <li><em></em><a href="http://news.loan.cngold.org/jisuanqi/zhdk.html" target="_blank">组合贷款计算器</a></li>
+                    <li><em></em><a href="http://news.loan.cngold.org/jisuanqi/esfjysf.html" target="_blank">二手房交易税费计算器</a></li>
+                    <li><em></em><a href="http://news.loan.cngold.org/jisuanqi/" target="_blank">更多 ></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="indRWrap mt10">
+        <div class="indRWrapTit2">
+            <a href="http://bank.cngold.org/yhdq/" target="_blank" class="more">更多>></a>
+            <h2><a href="http://bank.cngold.org/yhdq/" target="_blank" title="银行大全">银行大全</a></h2>
+        </div>
+        <ul class="indYhdq clearfix">
+            <li><a href="http://bank.cngold.org/index_3.html" target="_blank" title="广发银行"><img src="https://res.cngoldres.com/upload/2012/0910/a558h6xeeh09.jpg" alt="广发银行" /></a></li>
+            <li><a href="http://bank.cngold.org/index_4.html" target="_blank" title="光大银行"><img src="https://res.cngoldres.com/upload/2010/1129/vmzqgh32tdwd.jpg" alt="光大银行" /></a></li>
+            <li><a href="http://bank.cngold.org/index_5.html" target="_blank" title="工商银行"><img src="https://res.cngoldres.com/upload/2010/1129/pm9egh33or9u.jpg" alt="工商银行" /></a></li>
+            <li><a href="http://bank.cngold.org/index_9.html" target="_blank" title="建设银行"><img src="https://res.cngoldres.com/upload/2012/1107/q8zdh98698d8.jpg" alt="建设银行" /></a></li>
+            <li><a href="http://bank.cngold.org/index_10.html" target="_blank" title="交通银行"><img src="https://res.cngoldres.com/upload/2010/1129/mgv0gh34otzk.jpg" alt="交通银行" /></a></li>
+            <li><a href="http://bank.cngold.org/index_14.html" target="_blank" title="农业银行"><img src="https://res.cngoldres.com/upload/2010/1129/xuj0gh341vcd.jpg" alt="农业银行" /></a></li>
+            <li><a href="http://bank.cngold.org/index_16.html" target="_blank" title="浦发银行"><img src="https://res.cngoldres.com/upload/2010/1130/rz9agh4h8we5.jpg" alt="浦发银行" /></a></li>
+            <li><a href="http://bank.cngold.org/index_22.html" target="_blank" title="中国银行"><img src="https://res.cngoldres.com/upload/2010/1129/swhkgh351b2g.jpg" alt="中国银行" /></a></li>
+            <li><a href="http://bank.cngold.org/index_24.html" target="_blank" title="招商银行"><img src="https://res.cngoldres.com/upload/2010/1129/wp8xgh35ar9f.jpg" alt="招商银行" /></a></li>
+            <li><a href="http://bank.cngold.org/index_25.html" target="_blank" title="中信银行"><img src="https://res.cngoldres.com/upload/2014/1229/77da8ec5de1b88a98a63c02fc0cbe156.jpg" alt="中信银行" /></a></li>
+        </ul>
+    </div>
+</div>
+</div>
+
+
 </div>
 <!-- /header -->
 <div class="w960 center clear mt1">
   <div class="pleft">
-    <div class="listbox">
-      <dl class="tbox">
-        <dt><strong>2016最新银行存款利率</strong><span class="more"><a href="http://www.yinhanglilv.net/bank_lilv/" target="_blank">更多...</a></span></dt>
-        <dd>
-          <table cellspacing="0" cellpadding="0" width="100% ">
-            <tbody>
-              <tr>
-                <th ></th>
-                <th >三个月</th>
-                <th >六个月</th>
-                <th >一年</th>
-                <th >二年</th>
-                <th >三年</th>
-                <th >五年</th>
-              </tr>
-              <tr>
-                <td>整存整取</td>
-                <td>1.10</td>
-                <td>1.30</td>
-                <td>1.50</td>
-                <td>2.10</td>
-                <td>2.75</td>
-                <td>2.75</td>
-              </tr>
-              <tr>
-                <td>零存整取</td>
-                <td></td>
-                <td></td>
-                <td>1.35</td>
-                <td></td>
-                <td>1.55</td>
-                <td>1.55</td>
-              </tr>
-              <tr>
-                <td>整存零取</td>
-                <td></td>
-                <td></td>
-                <td>1.35</td>
-                <td></td>
-                <td>1.55</td>
-                <td>1.55</td>
-              </tr>
-              <tr>
-                <td>存本取息</td>
-                <td></td>
-                <td></td>
-                <td>1.35</td>
-                <td></td>
-                <td>1.55</td>
-                <td>1.55</td>
-              </tr>
-              <tr>
-                <td colspan="7"></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td colspan="2">活期</td>
-                <td colspan="2">一天通知</td>
-                <td colspan="2">七天通知</td>
-              </tr>
-              <tr>
-                <td>利率</td>
-                <td colspan="2">0.35</td>
-                <td colspan="2">0.8</td>
-                <td colspan="2">1.35</td>
-              </tr>
-            </tbody>
-          </table>
-        </dd>
-      </dl>
-      <dl class="tbox">
-        <dt><strong>2016最新银行贷款利率</strong><span class="more"><a href="http://www.yinhanglilv.net/loan_rate/" target="_blank">更多...</a></span></dt>
-        <dd>
-          <table cellspacing="0" cellpadding="0" width="100%">
-            <tbody>
-              <tr>
-                <th >时间</th>
-                <th >贷款年利率(%)</th>
-              </tr>
-              <tr>
-                <td style="text-align:left;">一、短期贷款</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>六个月（含）</td>
-                <td>4.35</td>
-              </tr>
-              <tr>
-                <td>六个月至一年（含）</td>
-                <td>4.35</td>
-              </tr>
-              <tr>
-                <td style="text-align:left;">二、中长期贷款</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>一至三年（含）</td>
-                <td>4.75</td>
-              </tr>
-              <tr>
-                <td>三年至五年（含）</td>
-                <td>4.75</td>
-              </tr>
-              <tr>
-                <td>五年以上</td>
-                <td>4.90</td>
-              </tr>
-            </tbody>
-          </table>
-        </dd>
-      </dl>
-    </div>
-    <div> <br>
-    </div>
     <div class="bignews"> 
       <!--头条-->
       <div class="onenews"> {dede:arclist flag='h' limit='0,1' titlelen=44 infolen='230'}
@@ -512,10 +1013,7 @@
         {/dede:arclist} </div>
       <!--/头条--> 
     </div>
-    
     <!-- /bignews -->
-
-    
     <div class="latestnews">
       <dl class="tbox light">
         <dt class="light"><strong>热点推荐</strong></dt>

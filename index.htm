@@ -11,7 +11,8 @@
 <!-- <link href="http://css.yinhanglilv.net/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" /> -->
 <link href="{dede:global.cfg_cmspath/}/templets/cngold/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
 <link rel="stylesheet" type="text/css" href="{dede:global.cfg_cmspath/}/templets/cngold/style/index.css" />
-<link rel="stylesheet" href="{dede:global.cfg_cmspath/}/templets/cngold/style/gold/bank_index_beta40.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_cmspath/}/templets/cngold/style/gold/bank_index_beta40.css" />
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_cmspath/}/templets/cngold/style/gold/bank_foot_beta40.css" />
 
 <script type="text/javascript" src="{dede:global.cfg_cmspath/}/templets/cngold/js/jquery-1.8.2.min.js"></script>
 <script type="text/javascript" src="{dede:global.cfg_cmspath/}/templets/cngold/js/creditInterface.js"></script>
@@ -151,7 +152,7 @@
         <div class="indWrap3 mt10">
             <ul class="bank_tabList bank_tab01 clearfix">
             	{dede:channelartlist typeid='63' row='8'}
-                <li class=""><a href="{dede:field name='typeurl'/}" target="_blank" title="{dede:field name='typename'/}">{dede:field name='typename'/}</a><span>◆</span></li>
+                <li><a href="{dede:field name='typeurl'/}" target="_blank" title="{dede:field name='typename'/}">{dede:field name='typename'/}</a><span>◆</span></li>
                 {/dede:channelartlist}
             </ul>
             <div class="bd">
@@ -367,6 +368,7 @@
     </div>
 </div>
 
+<!-- 银行服务 -->
 <div class="clearfix mt10">
     <div class="fl_l w650">
         <div class="indWrapTit2">
@@ -447,477 +449,412 @@
 	<div class="fl_r w300">
 	    <div class="indRWrap">
 	        <div class="indRWrapTit2">
-	            <a href="http://bank.cngold.org/wsyh/" target="_blank" class="more">更多>></a>
-	            <h2><a href="http://bank.cngold.org/wsyh/" target="_blank" title="网上银行知识">网上银行知识</a></h2>
+	            <a href="/wangyin/" target="_blank" class="more">更多>></a>
+	            <h2><a href="/wangyin/" target="_blank" title="网上银行知识">网上银行知识</a></h2>
 	        </div>
 	        <div class="knowWrap">
 	            <div class="hd hd01">
 	                <ul class="clearfix">
-	                    <li><a href="http://bank.cngold.org/wykt/" target="_blank" title="开通">开通</a><span>◆</span></li>
-	                    <li><a href="http://bank.cngold.org/wyzs/" target="_blank" title="助手">助手</a><span>◆</span></li>
-	                    <li><a href="http://bank.cngold.org/wycx/" target="_blank" title="查询">查询</a><span>◆</span></li>
-	                    <li><a href="http://bank.cngold.org/wyud/" target="_blank" title="U盾">U盾</a><span>◆</span></li>
-	                    <li><a href="http://bank.cngold.org/wyklk/" target="_blank" title="口令卡">口令卡</a><span>◆</span></li>
-	                    <li><a href="http://bank.cngold.org/ebzz/" target="_blank" title="转账">转账</a><span>◆</span></li>
+	                	{dede:channelartlist typeid='70,69,71,72' row='4'}
+	                    <li><a href="{dede:field name='typeurl'/}" target="_blank" title="{dede:field name='typename'/}">{dede:field name='typename' runphp='yes'}@me=mb_substr(@me, 2, mb_strlen(@me,'gbk'),'gbk');{/dede:field}</a><span>◆</span></li>
+	                    {/dede:channelartlist}
 	                </ul>
 	            </div>
 	            <div class="bd mt10">
+	            	{dede:channelartlist typeid='70,69,71,72' row='4'}
 	                <ul class="indNews5">
-		
-	                    <li><a href="http://bank.cngold.org/c/2016-05-24/c4121667.html" target="_blank" title="中信银行网上银行怎么开通" >中信银行网上银行怎么开通</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2016-01-29/c3879415.html" target="_blank" title="北京农商银行网上银行如何开通" >北京农商银行网上银行如何开通</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2016-01-29/c3879354.html" target="_blank" title="央行鼓励银行开通网银转账免费业务" >央行鼓励银行开通网银转账免费业务</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2015-07-09/c3398353.html" target="_blank" title="中原银行网银怎么开通" >中原银行网银怎么开通</a></li>
+	                	{dede:arclist titlelen='200' row='4'}
+	                    <li><a href="[field:arcurl/]" target="_blank" title="[field:title/]" >[field:title/]</a></li>
+	                    {/dede:arclist}
 	                </ul>
-	                <ul class="indNews5" style="display:none;">
-		
-	                    <li><a href="http://bank.cngold.org/c/2015-07-09/c3398453.html" target="_blank" title="中原银行网银助手" >中原银行网银助手</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2015-06-18/c3349139.html" target="_blank" title="华融湘江银行网银助手介绍" >华融湘江银行网银助手介绍</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2015-06-18/c3349122.html" target="_blank" title="华融湘江银行网银助手有什么优势" >华融湘江银行网银助手有什么优势</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-01-16/c2378606.html" target="_blank" title="招商银行网银证书复制是什么" >招商银行网银证书复制是什么</a></li>
-	                </ul>
-	                <ul class="indNews5" style="display:none;">
-		
-	                    <li><a href="http://bank.cngold.org/c/2015-06-18/c3349176.html" target="_blank" title="华融湘江银行网银怎么查询余额" >华融湘江银行网银怎么查询余额</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-09-26/c2782286.html" target="_blank" title="邮政储蓄网上银行查询交易明细" >邮政储蓄网上银行查询交易明细</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-09-24/c2774797.html" target="_blank" title="怎么上网查银行卡余额" >怎么上网查银行卡余额</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-09-24/c2772492.html" target="_blank" title="网银账号查询" >网银账号查询</a></li>
-	                </ul>
-	                <ul class="indNews5" style="display:none;">
-		
-	                    <li><a href="http://bank.cngold.org/c/2014-09-30/c2789106.html" target="_blank" title="工行网银u盾无法识别" >工行网银u盾无法识别</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-09-10/c2749238.html" target="_blank" title="网银u盾无法识别" >网银u盾无法识别</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-09-04/c2741968.html" target="_blank" title="网银k宝密码是什么" >网银k宝密码是什么</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-09-03/c2739418.html" target="_blank" title="网银u盾是什么" >网银u盾是什么</a></li>
-	                </ul>
-	                <ul class="indNews5" style="display:none;">
-		
-	                    <li><a href="http://bank.cngold.org/c/2014-09-04/c2741805.html" target="_blank" title="网银动态口令是什么" >网银动态口令是什么</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-05-23/c2565497.html" target="_blank" title="光大银行阳光网盾介绍" >光大银行阳光网盾介绍</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-01-17/c2380779.html" target="_blank" title="广发银行Key盾支持哪些操作系统" >广发银行Key盾支持哪些操作系统</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-01-17/c2380768.html" target="_blank" title="广发银行Key盾访问密码介绍" >广发银行Key盾访问密码介绍</a></li>
-	                </ul>
-	                <ul class="indNews5" style="display:none;">
-		
-	                    <li><a href="http://bank.cngold.org/c/2016-01-29/c3879460.html" target="_blank" title="网银转账实现免费计划" >网银转账实现免费计划</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-10-09/c2799022.html" target="_blank" title="网银转账手续费介绍" >网银转账手续费介绍</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-10-09/c2799003.html" target="_blank" title="网银能转账到支付宝吗" >网银能转账到支付宝吗</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-10-08/c2796198.html" target="_blank" title="用网银转账多久能到账？" >用网银转账多久能到账？</a></li>
-	                </ul>
+	                {/dede:channelartlist}
 	            </div>
 	        </div>
 	        <div class="knowWrap mt10">
 	            <div class="hd hd01">
 	                <ul class="clearfix">
-	                    <li><a href="http://bank.cngold.org/ebzsh/" target="_blank" title="证书">证书</a><span>◆</span></li>
-	                    <li><a href="http://bank.cngold.org/ebdl/" target="_blank" title="登陆">登陆</a><span>◆</span></li>
-	                    <li><a href="http://bank.cngold.org/ebchf/" target="_blank" title="充话费">充话费</a><span>◆</span></li>
-	                    <li><a href="http://bank.cngold.org/ebzmy/" target="_blank" title="怎么用">怎么用</a><span>◆</span></li>
-	                    <li><a href="http://bank.cngold.org/ebjh/" target="_blank" title="激活">激活</a><span>◆</span></li>
-	                    <li><a href="http://bank.cngold.org/ebzf/" target="_blank" title="支付">支付</a><span>◆</span></li>
+	                	{dede:channelartlist typeid='73,74,75,76' row='4'}
+	                    <li><a href="{dede:field name='typeurl'/}" target="_blank" title="{dede:field name='typename'/}">{dede:field name='typename' runphp='yes'}@me=mb_substr(@me, 2, mb_strlen(@me,'gbk'),'gbk');{/dede:field}</a><span>◆</span></li>
+	                    {/dede:channelartlist}
 	                </ul>
 	            </div>
 	            <div class="bd mt10">
+	            	{dede:channelartlist typeid='73,74,75,76' row='4'}
 	                <ul class="indNews5">
-		
-	                    <li><a href="http://bank.cngold.org/c/2015-09-09/c3539133.html" target="_blank" title="工行北流市支行大力推进企业网银业务发展" >工行北流市支行大力推进企业网银业务发展</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2015-07-09/c3398487.html" target="_blank" title="中原银行网银证书" >中原银行网银证书</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-09-29/c2787298.html" target="_blank" title="网银下载证书" >网银下载证书</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-09-26/c2782564.html" target="_blank" title="网银证书过期怎么重新安装" >网银证书过期怎么重新安装</a></li>
+	                	{dede:arclist titlelen='200' row='4'}
+	                    <li><a href="[field:arcurl/]" target="_blank" title="[field:title/]" >[field:title/]</a></li>
+	                    {/dede:arclist}
 	                </ul>
-	                <ul class="indNews5" style="display:none;">
-		
-	                    <li><a href="http://bank.cngold.org/c/2014-10-08/c2796227.html" target="_blank" title="如何登录网银才安全" >如何登录网银才安全</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-10-08/c2796215.html" target="_blank" title="工行网银登陆不了怎么回事" >工行网银登陆不了怎么回事</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-09-30/c2789024.html" target="_blank" title="交通网银登陆不了" >交通网银登陆不了</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-09-29/c2787213.html" target="_blank" title="登陆邮政储蓄网上银行相关问题" >登陆邮政储蓄网上银行相关问题</a></li>
-	                </ul>
-	                <ul class="indNews5" style="display:none;">
-		
-	                    <li><a href="http://bank.cngold.org/c/2014-08-22/c2718563.html" target="_blank" title="没开通网银可以充话费吗?" >没开通网银可以充话费吗?</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-08-22/c2718549.html" target="_blank" title="怎样用网银充话费?" >怎样用网银充话费?</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-08-22/c2718533.html" target="_blank" title="网银充话费最划算吗?" >网银充话费最划算吗?</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-08-22/c2718484.html" target="_blank" title="网银充手机话费" >网银充手机话费</a></li>
-	                </ul>
-	                <ul class="indNews5" style="display:none;">
-		
-	                    <li><a href="http://bank.cngold.org/c/2015-06-18/c3349155.html" target="_blank" title="华融湘江银行网银怎么用" >华融湘江银行网银怎么用</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-09-30/c2789012.html" target="_blank" title="网银如何使用" >网银如何使用</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-09-26/c2782357.html" target="_blank" title="我的网银怎么用不了" >我的网银怎么用不了</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-09-22/c2768561.html" target="_blank" title="网银用不了怎么回事" >网银用不了怎么回事</a></li>
-	                </ul>
-	                <ul class="indNews5" style="display:none;">
-		
-	                    <li><a href="http://bank.cngold.org/c/2015-07-09/c3398297.html" target="_blank" title="中原银行网银怎么激活" >中原银行网银怎么激活</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2015-06-18/c3349260.html" target="_blank" title="如何激活华融湘江银行网银" >如何激活华融湘江银行网银</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-09-24/c2774441.html" target="_blank" title="如何激活邮政储蓄网上银行" >如何激活邮政储蓄网上银行</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-09-16/c2758697.html" target="_blank" title="怎么用手机激活网银" >怎么用手机激活网银</a></li>
-	                </ul>
-	                <ul class="indNews5" style="display:none;">
-		
-	                    <li><a href="http://bank.cngold.org/c/2016-01-29/c3879490.html" target="_blank" title="农行网银支付P2P充值被禁 难与银行合作" >农行网银支付P2P充值被禁 难与银行合作</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-10-09/c2799034.html" target="_blank" title="有网银怎么买东西" >有网银怎么买东西</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-10-08/c2796281.html" target="_blank" title="信用卡网银支付限额" >信用卡网银支付限额</a></li>
-	                    <li><a href="http://bank.cngold.org/c/2014-10-08/c2796223.html" target="_blank" title="网银怎么支付不了" >网银怎么支付不了</a></li>
-	                </ul>
+	                {/dede:channelartlist}
 	            </div>
 	        </div>
 	    </div>
 	</div>
 </div>
 
+<!-- 银行业务 -->
+<!-- 贷款利率 -->
+<div class="clearfix mt10">
+    <div class="fl_l w650">
+        <div class="indWrapTit2">
+            <div class="more">
+                <a href="/loan_rate/" target="_blank" title="银行信贷">银行信贷</a> - <a href="/loan_rate/" target="_blank" title="银行贷款">银行贷款</a>
+            </div>
+            <h2><a href="/loan_rate/" target="_blank" title="银行业务">银行业务</a></h2><span class="en">BANK BUSINESS</span>
+        </div>
+        <div class="loanWrap">
+            <div class="loan_tabList mt10">
+                <h3><a href="/loan_rate/" target="_blank" title="银行贷款">银行贷款</a></h3>
+                <ul class="tabs">
+                	{dede:channelartlist typeid='3' row='6'}
+                    <li><a href="{dede:field name='typeurl'/}" target="_blank" title="{dede:field name='typename'/}">{dede:field name='typename'/}</a><span>◆</span></li>
+                    {/dede:channelartlist}
+                </ul>
+            </div>
+            <div class="bd">
+            	{dede:channelartlist typeid='3' row='6'}
+	            <div class="mt10" style="display:none;">
+	                <div class="clearfix">
+	                	{dede:arclist limit='0,2' infolen='40'}
+	                        <div class="bankNewAdv1 w320 [field:global name=autoindex runphp="yes"](@me==1)? @me="fl_l":@me="fl_r";[/field:global]">
+	                            <h3><a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:title/]</a></h3>
+	                        	<p>[field:info/]...</p>
+	                        </div>
+	                    {/dede:arclist}
+	                </div>
+	                <ul class="indNews2 clearfix mt10">
+	                	{dede:arclist limit='2,8' infolen='40'}
+	                    <li><a href="[field:arcurl/]" target="_blank" title="[field:title/]" >[field:title/]</a></li>
+	                    {/dede:arclist}
+	                </ul>
+	            </div>
+	            {/dede:channelartlist}
+    		</div>
+</div>
+<!-- 房贷利率 -->
+<div class="indWrap3">
+    <div class="indWrapTit3 mt10">
+        <div class="tabList tab03">
+        	{dede:channelartlist typeid='8' row='6'}
+            <a href="{dede:field name='typeurl'/}" target="_blank" title="{dede:field name='typename'/}">{dede:field name='typename'/}</a>
+            {/dede:channelartlist}
+        </div>
+    </div>
+    <div class="bd">
+    	{dede:channelartlist typeid='8' row='6'}
+        <ul class="indNews6 clearfix" >
+        	{dede:arclist row='12' infolen='40'}
+            <li><a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:title/]</a></li>
+            {/dede:arclist}
+        </ul>
+        {/dede:channelartlist}
+    </div>
+</div>
+<div class="indWrapTit2 mt10">
+    <h2><a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="银行百科">银行百科</a></h2><span class="en">BANK ENCYCLOPEDIA</span>
+</div>
+<div class="clearfix mt10">
+    <div class="indBaike">
+        <dl class="one">
+        <dt><a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="银行简介百科">银行简介</a></dt>
+	
+        <dd class="fl_l">
+            <a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="复利计息" >复利计息</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="复利投资" >复利投资</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="单利和复利" >单利和复利</a>
+        </dd>
+    </dl>
+        <dl>
+        <dt><a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="银行业务百科">银行业务</a></dt>
+	
+        <dd class="fl_l">
+            <a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="银行职位有哪些" >银行职位有哪些</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="农行星期六上班吗" >农行星期六上班吗</a>
+        </dd>
+    </dl>
+        <dl class="one">
+        <dt><a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="网上银行百科">网上银行</a></dt>
+	
+        <dd class="fl_l">
+            <a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="农行网银怎么转账" >农行网银怎么转账</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="网银怎么转账到别人的支付宝" >网银怎么转账到别人的支付宝</a>
+        </dd>
+    </dl>
+        <dl>
+        <dt><a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="手机银行百科">手机银行</a></dt>
+	
+        <dd class="fl_l">
+            <a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="怎么登陆手机银行" >怎么登陆手机银行</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="工行手机银行怎么注册" >工行手机银行怎么注册</a>
+        </dd>
+    </dl>
+        <dl class="one">
+        <dt><a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="银行费用百科">银行费用</a></dt>
+	
+        <dd class="fl_l">
+            <a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="银行卡年费怎么取消" >银行卡年费怎么取消</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="银行卡透支额度" >银行卡透支额度</a>
+        </dd>
+    </dl>
+        <dl>
+        <dt><a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="银行人物百科">银行人物</a></dt>
+	
+        <dd class="fl_l">
+            <a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="银行大堂经理招聘要求" >银行大堂经理招聘要求</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="银行信贷员工作内容" >银行信贷员工作内容</a>
+        </dd>
+    </dl>
+        <dl class="one">
+        <dt><a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="银行监管百科">银行监管</a></dt>
+	
+        <dd class="fl_l">
+            <a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="商业银行市场风险有哪些" >商业银行市场风险有哪些</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="中央银行职能是哪些" >中央银行职能是哪些</a>
+        </dd>
+    </dl>
+        <dl>
+        <dt><a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="银行术语百科">银行术语</a></dt>
+	
+        <dd class="fl_l">
+            <a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="银行信用等级怎么规定" >银行信用等级怎么规定</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="什么是企业银行" >什么是企业银行</a>
+        </dd>
+    </dl>
+        <dl class="one">
+        <dt><a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="银行卡百科">银行卡</a></dt>
+	
+        <dd class="fl_l">
+            <a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="余额宝转出限额设置" >余额宝转出限额设置</a>
+        </dd>
+        <dd class="fl_l">
+             | <a href="http://www.yinhanglilv.net/lilvchangshi/" target="_blank" title="余额宝怎么转账到别人的银行卡" >余额宝怎么转账到别人的银行卡</a>
+        </dd>
+    </dl>
+</div>
+<div class="fl_r w240">
+    <ul class="indNews">
+		{dede:arclist typeid='15' row='10'}
+        <li><a href="[field:arcurl /]" title="[field:title/] "target="_blank">[field:title /]</a></li>
+        {/dede:arclist}
+    </ul>
+</div>
+</div>
+</div>
+<div class="fl_r w300">
+    <div class="indRWrap">
+        <div class="indRWrapTit2">
+            <a href="/deposit_rate/" target="_blank" class="more">更多>></a>
+            <h2><a href="/deposit_rate/" target="_blank" title="热门贷款产品">热门贷款产品</a></h2>
+        </div>
+        <!-- ssi begin -->
+        <ul class="indLoanPro">
+	          <li>
+              <h3><a href="/deposit_rate/" target="_blank">个人信用消费贷款</a></h3>
+              <a href="/deposit_rate/" target="_blank" class="btn">申请</a>
+              <p>
+                  <span>额度：<em>
+                      10-50万
+                  </em></span>
+                  <span>利率：<em>0%</em></span>
+              </p>
+          </li>
+          <li>
+              <h3><a href="/deposit_rate/" target="_blank">水木润泽车贷</a></h3>
+              <a href="/deposit_rate/" target="_blank" class="btn">申请</a>
+              <p>
+                  <span>额度：<em>
+                      10-50万
+                  </em></span>
+                  <span>利率：<em>3%</em></span>
+              </p>
+          </li>
+          <li>
+              <h3><a href="/deposit_rate/" target="_blank">闵沪房贷</a></h3>
+              <a href="/deposit_rate/" target="_blank" class="btn">申请</a>
+              <p>
+                  <span>额度：<em>
+                      50万以上
+                  </em></span>
+                  <span>利率：<em>1.25%</em></span>
+              </p>
+          </li>
+		</ul>
+        <!-- ssi end -->
+    </div>
+    <div class="indRWrap mt10">
+        <div class="indRWrapTit2">
+            <a href="/jisuanqi/" target="_blank" class="more">更多>></a>
+            <h2><a href="/jisuanqi/" target="_blank" title="银行实用理财工具">银行实用理财工具</a></h2>
+        </div>
+        <div class="knowWrap">
+            <div class="hd hd02">
+                <ul class="clearfix">
+                	{dede:channelartlist typeid='9' row='3'}
+                    <li><a href="{dede:field name='typeurl'/}" target="_blank" title="{dede:field name='typename'/}">{dede:field name='typename'/}</a><span>◆</span></li>
+                    {/dede:channelartlist}
+                </ul>
+            </div>
+            <div class="bd mt10">
+            	{dede:channelartlist typeid='9' row='3'}
+                <ul class="indTool clearfix">
+                	{dede:arclist row='8'}
+                    <li><em></em><a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:title/]</a></li>
+                    {/dede:arclist}
+                </ul>
+                {/dede:channelartlist}
+            </div>
+        </div>
+    </div>
+    <div class="indRWrap mt10">
+        <div class="indRWrapTit2">
+            <a href="/wangyin/" target="_blank" class="more">更多>></a>
+            <h2><a href="/wangyin/" target="_blank" title="银行大全">银行大全</a></h2>
+        </div>
+        <ul class="indYhdq clearfix">
+            <li><a href="/wangyin/" target="_blank" title="广发银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bimg_guangfa.jpg" alt="广发银行" /></a></li>
+            <li><a href="/wangyin/" target="_blank" title="光大银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bimg_guangda.jpg" alt="光大银行" /></a></li>
+            <li><a href="/wangyin/" target="_blank" title="工商银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bimg_gongshang.jpg" alt="工商银行" /></a></li>
+            <li><a href="/wangyin/" target="_blank" title="建设银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bimg_jianshe.jpg" alt="建设银行" /></a></li>
+            <li><a href="/wangyin/" target="_blank" title="交通银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bimg_jiaotong.jpg" alt="交通银行" /></a></li>
+            <li><a href="/wangyin/" target="_blank" title="农业银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bimg_nongye.jpg" alt="农业银行" /></a></li>
+            <li><a href="/wangyin/" target="_blank" title="浦发银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bimg_pufa.jpg" alt="浦发银行" /></a></li>
+            <li><a href="/wangyin/" target="_blank" title="中国银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bimg_zhongguo.jpg" alt="中国银行" /></a></li>
+            <li><a href="/wangyin/" target="_blank" title="招商银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bimg_zhaoshang.jpg" alt="招商银行" /></a></li>
+            <li><a href="/wangyin/" target="_blank" title="中信银行"><img src="{dede:global.cfg_cmspath/}/templets/cngold/images/bank_icon/bimg_zhongxin.jpg" alt="中信银行" /></a></li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<!-- 信用卡中心 -->
+<div class="clearfix mt10">
+    <div class="fl_l w650">
+        <div class="indWrapTit2">
+            <div class="more">
+                <a href="/xinyongka/" target="_blank" title="信用卡中心">信用卡中心</a> - <a href="/xinyongka/" target="_blank" title="信用卡申请">信用卡申请</a>
+            </div>
+            <h2><a href="/xinyongka/" target="_blank" title="信用卡中心">信用卡中心</a></h2><span class="en">CREDIT CARD CENTER</span>
+        </div>
+       {dede:include filename="index-xyk-shenqing.htm"/}
+        <div class="clearfix mt10">
+            <div class="fl_l w320">
+                <div class="indWrap mt10">
+                    <div class="indWrapTit">
+                        <a href="/xinyongka/" target="_blank" class="more">更多>></a>
+                        <h2><a href="/xinyongka/" target="_blank" title="信用卡动态">信用卡动态</a></h2>
+                    </div>
+                    <div class="bankNewAdv1">
+                    	{dede:arclist typeid='53' limit='0,1' infolen='60'}
+                            <h3><a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:title/]</a></h3>
+                            <p>[field:info/]...</p>
+                        {/dede:arclist}
+                    </div>
+                    <ul class="indNews">
+                    	{dede:arclist typeid='53' limit='1,6' infolen='60'}
+                        <li><a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:title/]</a></li>
+                        {/dede:arclist}
+                    </ul>
+                </div>
+            </div>
+            <div class="fl_r w320">
+                <div class="indWrap mt10">
+                    <div class="indWrapTit">
+                        <a href="/xinyongka/" target="_blank" class="more">更多>></a>
+                        <h2><a href="/xinyongka/" target="_blank" title="信用卡优惠活动">信用卡优惠活动</a></h2>
+                    </div>
+                    <div class="bankNewAdv1">
+                    	{dede:arclist typeid='53' limit='7,1' infolen='60'}
+                            <h3><a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:title/]</a></h3>
+                            <p>[field:info/]...</p>
+                        {/dede:arclist}
+                    </div>
+                    <ul class="indNews">
+                    	{dede:arclist typeid='53' limit='8,6' infolen='60'}
+                        <li><a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:title/]</a></li>
+                        {/dede:arclist}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fl_r w300">
+        <div class="indRWrap">
+            <div class="knowWrap">
+                <div class="hd hd03">
+                    <ul class="clearfix">
+                    	{dede:channelartlist typeid='78,84,24' row='4'}
+                    	<li><a href="{dede:field name='typeurl'/}" target="_blank" title="{dede:field name='typename'/}">{dede:field name='typename'/}</a><span>◆</span></li>
+	                    {/dede:channelartlist}
+                    </ul>
+                </div>
+                <div class="bd mt10">
+                	{dede:channelartlist typeid='78,84,24' row='4'}
+                    <ul class="indNews5">
+                    	{dede:arclist titlelen='200' row='9'}
+                        <li><span class="date">[field:pubdate function="MyDate('m-d',@me)"/]</span><a href="[field:arcurl/]" target="_blank" title="[field:title/]" >[field:title/]</a></li>
+                        {/dede:arclist}
+                    </ul>
+                    {/dede:channelartlist}
+                </div>
+            </div>
+            <div class="mt10">
+            </div>
+            <div class="knowWrap mt10">
+                <div class="hd hd03">
+                    <ul class="clearfix">
+                    	{dede:channelartlist typeid='63' row='4'}
+                    	<li><a href="{dede:field name='typeurl'/}" target="_blank" title="{dede:field name='typename'/}">{dede:field name='typename' runphp='yes'}@me=mb_substr(@me, 0, 4,'gbk');{/dede:field}</a><span>◆</span></li>
+	                    {/dede:channelartlist}
+                    </ul>
+                </div>
+                <div class="bd mt10">
+                	{dede:channelartlist typeid='63' row='4'}
+                    <ul class="indNews5">
+                    	{dede:arclist titlelen='200' row='9'}
+                        <li><span class="date">[field:pubdate function="MyDate('m-d',@me)"/]</span><a href="[field:arcurl/]" target="_blank" title="[field:title/]" >[field:title/]</a></li>
+                        {/dede:arclist}
+                    </ul>
+                    {/dede:channelartlist}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 </div>
-<!-- /header -->
-<div class="w960 center clear mt1">
-  <div class="pleft">
-    <div class="bignews"> 
-      <!--头条-->
-      <div class="onenews"> {dede:arclist flag='h' limit='0,1' titlelen=44 infolen='230'}
-        <h2><a href="[field:arcurl/]" target="_blank" >[field:title/]</a></h2>
-        <p>[field:info/]...<a href="[field:arcurl/]" target="_blank" >[详细内容]</a></p>
-        {/dede:arclist} </div>
-      <!-- /onenews -->
-      <div class="d1"> {dede:arclist flag='h' limit='1,6'}
-        <div class='d1arc'><a href="[field:arcurl/]"target="_blank" >[field:title/]</a></div>
-        {/dede:arclist} </div>
-      <!--/头条--> 
-    </div>
-    <!-- /bignews -->
-    <div class="latestnews">
-      <dl class="tbox light">
-        <dt class="light"><strong>热点推荐</strong></dt>
-        <dd class="light">
-          <ul class="d2 ico2">
-            {dede:arclist flag='a' row='6' orderby='pubdate'}
-            <li><span>[field:pubdate function="MyDate('m-d',@me)"/]</span><a href="[field:arcurl/]" title="[field:title/]"  target="_blank" >[field:title /]</a></li>
-            {/dede:arclist}
-          </ul>
-        </dd>
-      </dl>
-    </div>
-    <!-- /latestnews -->
-    <div class="bignews">
-      <div class='newarticle'>最新文章</div>
-      <ul class="c2 ico1">
-        
-        <!--最新文档--> 
-        {dede:arclist  row='12'  titlelen=32}
-        <li><a href="[field:arcurl/]" title="[field:title/]"  target="_blank" >[field:title /]</a></li>
-        {/dede:arclist} 
-        <!--//最新文档-->
-      </ul>
-    </div>
-    <div> <br>
-    </div>
-    <!-- /picnews -->
-    
-    <div class="listbox"> {dede:channelartlist typeid = '5,5' row = '1'}
-      <dl class="tbox">
-        <dt><strong>{dede:field name='typename'/}</strong><span class="more"><a href="{dede:field name='typeurl'/}" target="_blank">更多...</a></span></dt>
-        <dd>
-          <ul class="d1 ico3">
-            {dede:arclist titlelen='60' row='8'}
-            <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" title="[field:title/] "target="_blank">[field:title /]</a></li>
-            {/dede:arclist}
-          </ul>
-        </dd>
-      </dl>
-      {/dede:channelartlist}
-      {dede:channelartlist typeid = '6,6' row = '1'}
-      <dl class="tbox">
-        <dt><strong>{dede:field name='typename'/}</strong><span class="more"><a href="{dede:field name='typeurl'/}" target="_blank">更多...</a></span></dt>
-        <dd>
-          <ul class="d1 ico3">
-            {dede:arclist titlelen='60' row='8'}
-            <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" title="[field:title/] "target="_blank">[field:title /]</a></li>
-            {/dede:arclist}
-          </ul>
-        </dd>
-      </dl>
-      {/dede:channelartlist} </div>
-    <!-- /listbox -->
-    
-    <div class="listbox"> {dede:channelartlist typeid = '15,15' row = '1'}
-      <dl class="tbox">
-        <dt><strong>{dede:field name='typename'/}</strong><span class="more"><a href="{dede:field name='typeurl'/}" target="_blank">更多...</a></span></dt>
-        <dd>
-          <ul class="d1 ico3">
-            {dede:arclist titlelen='60' row='7'}
-            <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" title="[field:title/] "target="_blank">[field:title /]</a></li>
-            {/dede:arclist}
-          </ul>
-        </dd>
-      </dl>
-      {/dede:channelartlist}
-      {dede:channelartlist typeid = '14,14' row = '1'}
-      <dl class="tbox">
-        <dt><strong>{dede:field name='typename'/}</strong><span class="more"><a href="{dede:field name='typeurl'/}" target="_blank">更多...</a></span></dt>
-        <dd>
-          <ul class="d1 ico3">
-            {dede:arclist titlelen='60' row='7'}
-            <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" title="[field:title/] "target="_blank">[field:title /]</a></li>
-            {/dede:arclist}
-          </ul>
-        </dd>
-      </dl>
-      {/dede:channelartlist} </div>
-    <!-- /listbox --> 
-    
-    <!-- /picnews -->
-    
-    <div class="listbox"> {dede:channelartlist typeid = '3,3' row = '1'}
-      <dl class="tbox">
-        <dt><strong>{dede:field name='typename'/}</strong><span class="more"><a href="{dede:field name='typeurl'/}" target="_blank">更多...</a></span></dt>
-        <dd>
-          <ul class="d1 ico3">
-            {dede:arclist titlelen='60' row='8'}
-            <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" title="[field:title/] "target="_blank">[field:title /]</a></li>
-            {/dede:arclist}
-          </ul>
-        </dd>
-      </dl>
-      {/dede:channelartlist}
-      {dede:channelartlist typeid = '24,24' row = '1'}
-      <dl class="tbox">
-        <dt><strong>{dede:field name='typename'/}</strong><span class="more"><a href="{dede:field name='typeurl'/}" target="_blank">更多...</a></span></dt>
-        <dd>
-          <ul class="d1 ico3">
-            {dede:arclist titlelen='60' row='8'}
-            <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" title="[field:title/] "target="_blank">[field:title /]</a></li>
-            {/dede:arclist}
-          </ul>
-        </dd>
-      </dl>
-      {/dede:channelartlist} </div>
-    <!-- /listbox -->
-    
-    <div class="listbox"> {dede:channelartlist typeid = '7,7' row = '1'}
-      <dl class="tbox">
-        <dt><strong>{dede:field name='typename'/}</strong><span class="more"><a href="{dede:field name='typeurl'/}" target="_blank">更多...</a></span></dt>
-        <dd>
-          <ul class="d1 ico3">
-            {dede:arclist titlelen='60' row='8'}
-            <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" title="[field:title/] "target="_blank">[field:title /]</a></li>
-            {/dede:arclist}
-          </ul>
-        </dd>
-      </dl>
-      {/dede:channelartlist}
-      {dede:channelartlist typeid = '4,4' row = '1'}
-      <dl class="tbox">
-        <dt><strong>{dede:field name='typename'/}</strong><span class="more"><a href="{dede:field name='typeurl'/}" target="_blank">更多...</a></span></dt>
-        <dd>
-          <ul class="d1 ico3">
-            {dede:arclist titlelen='60' row='8'}
-            <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" title="[field:title/] "target="_blank">[field:title /]</a></li>
-            {/dede:arclist}
-          </ul>
-        </dd>
-      </dl>
-      {/dede:channelartlist} </div>
-    <!-- /listbox -->
-    
-    <div class="listbox"> {dede:channelartlist typeid = '9,9' row = '1'}
-      <dl class="tbox">
-        <dt><strong>{dede:field name='typename'/}</strong><span class="more"><a href="{dede:field name='typeurl'/}" target="_blank">更多...</a></span></dt>
-        <dd>
-          <ul class="d1 ico3">
-            {dede:arclist titlelen='60' row='8'}
-            <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" title="[field:title/] "target="_blank">[field:title /]</a></li>
-            {/dede:arclist}
-          </ul>
-        </dd>
-      </dl>
-      {/dede:channelartlist}
-      {dede:channelartlist typeid = '8,8' row = '1'}
-      <dl class="tbox">
-        <dt><strong>{dede:field name='typename'/}</strong><span class="more"><a href="{dede:field name='typeurl'/}" target="_blank">更多...</a></span></dt>
-        <dd>
-          <ul class="d1 ico3">
-            {dede:arclist titlelen='60' row='8'}
-            <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" title="[field:title/] "target="_blank">[field:title /]</a></li>
-            {/dede:arclist}
-          </ul>
-        </dd>
-      </dl>
-      {/dede:channelartlist} </div>
-	  <!-- /listbox -->
 
-    <div class="listbox"> {dede:channelartlist typeid = '53,53' row = '1'}
-      <dl class="tbox">
-        <dt><strong>{dede:field name='typename'/}</strong><span class="more"><a href="{dede:field name='typeurl'/}" target="_blank">更多...</a></span></dt>
-        <dd>
-          <ul class="d1 ico3">
-            {dede:arclist titlelen='60' row='8'}
-            <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" title="[field:title/] "target="_blank">[field:title /]</a></li>
-            {/dede:arclist}
-          </ul>
-        </dd>
-      </dl>
-      {/dede:channelartlist}
-      {dede:channelartlist typeid = '78,78' row = '1'}
-      <dl class="tbox">
-        <dt><strong>{dede:field name='typename'/}</strong><span class="more"><a href="{dede:field name='typeurl'/}" target="_blank">更多...</a></span></dt>
-        <dd>
-          <ul class="d1 ico3">
-            {dede:arclist titlelen='60' row='8'}
-            <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" title="[field:title/] "target="_blank">[field:title /]</a></li>
-            {/dede:arclist}
-          </ul>
-        </dd>
-      </dl>
-      {/dede:channelartlist} </div>
-    <!-- /listbox --> 
-
-	 <div class="listbox"> {dede:channelartlist typeid = '68,68' row = '1'}
-      <dl class="tbox">
-        <dt><strong>{dede:field name='typename'/}</strong><span class="more"><a href="{dede:field name='typeurl'/}" target="_blank">更多...</a></span></dt>
-        <dd>
-          <ul class="d1 ico3">
-            {dede:arclist titlelen='60' row='8'}
-            <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" title="[field:title/] "target="_blank">[field:title /]</a></li>
-            {/dede:arclist}
-          </ul>
-        </dd>
-      </dl>
-      {/dede:channelartlist}
-      {dede:channelartlist typeid = '63,63' row = '1'}
-      <dl class="tbox">
-        <dt><strong>{dede:field name='typename'/}</strong><span class="more"><a href="{dede:field name='typeurl'/}" target="_blank">更多...</a></span></dt>
-        <dd>
-          <ul class="d1 ico3">
-            {dede:arclist titlelen='60' row='8'}
-            <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" title="[field:title/] "target="_blank">[field:title /]</a></li>
-            {/dede:arclist}
-          </ul>
-        </dd>
-      </dl>
-      {/dede:channelartlist} </div>
-    <!-- /listbox --> 
-    
-  </div>
-  <!-- /pleft -->
-  
-  <div class="pright"> 
-    
-    <!-- /commend -->
-    
-    <div class="hot mt1">
-      <table width="250" style="text-align:left" border="0">
-        <tr>
-          <td><!-- 广告位：yinhanglilv-250*250 --> 
-            <script type="text/javascript">
-var cpro_id="u2398763";
-(window["cproStyleApi"] = window["cproStyleApi"] || {})[cpro_id]={at:"3",rsi0:"250",rsi1:"250",pat:"17",tn:"baiduCustNativeAD",rss1:"#FFFFFF",conBW:"1",adp:"1",ptt:"0",titFF:"%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91",titFS:"14",rss2:"#000000",titSU:"0"}
-</script>
-<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
-		  </td>
-        </tr>
-      </table>
-    </div>
-    
-    
-    <div class="hot mt1">
-      <dl class="tbox light">
-        <dt class='light'><strong>银行利率相关</strong></dt>
-        <dd class='light'>
-          <ul class="c1 ico2">
-<script type="text/javascript">
-    /*240*430 创建于 2016-03-05*/
-    var cpro_id = "u2543606";
-</script>
-<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
-          </ul>
-        </dd>
-      </dl>
-    </div>
-    <!-- /usercenter -->
-    
-    <div class="hot mt1">
-      <dl class="tbox light">
-        <dt class='light'><strong>本月热点</strong></dt>
-        <dd class='light'>
-          <ul class="c1 ico2">
-            {dede:arclist flag='a'row=10 titlelen=42 limit='29,12'}
-            <li class='dotline'><a href="[field:arcurl/]"target="_blank">[field:title/]</a></li>
-            {/dede:arclist}
-          </ul>
-        </dd>
-      </dl>
-    </div>
-            <script type="text/javascript">
-var cpro_id="u2398763";
-(window["cproStyleApi"] = window["cproStyleApi"] || {})[cpro_id]={at:"3",rsi0:"250",rsi1:"250",pat:"17",tn:"baiduCustNativeAD",rss1:"#FFFFFF",conBW:"1",adp:"1",ptt:"0",titFF:"%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91",titFS:"14",rss2:"#000000",titSU:"0"}
-</script>
-<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
-    <div class="commend mt1">
-      <dl class="tbox light">
-        <dt class='light'><strong>站内推荐</strong></dt>
-        <dd class='light'>
-          <ul class="d4">
-            {dede:arclist flag='a' titlelen=42 limit='19,5'}
-            <li><a href="[field:arcurl/]"target="_blank">[field:title/]</a>
-              <p>[field:description function='cn_substr(@me,80)'/]...</p>
-            </li>
-            {/dede:arclist}
-          </ul>
-        </dd>
-      </dl>
-    </div>
-    <!-- /commend -->
-    
-    <div class="commend mt1">
-      <dl class="tbox light">
-        <dt class='light'><strong>推荐内容</strong></dt>
-        <dd class='light'>
-          <ul class="c1 ico2">
-            {dede:arclist flag='c' titlelen=42 row='100' tagid='dedecms' pagesize='10'}
-            <li class='dotline'><a href="[field:arcurl/]"target="_blank">[field:title/]</a></li>
-            {/dede:arclist}
-          </ul>
-          <div class="c_page">{dede:arcpagelist tagid='dedecms'/}</div>
-        </dd>
-      </dl>
-    </div>
-    
-    <!-- /commend -->
-    <div class="hot mt1">
-      <dl class="tbox light">
-        <dt class='light'><strong>本月热点</strong></dt>
-        <dd class='light'>
-          <ul class="c1 ico2">
-            {dede:arclist ' sort='hot' subday='30' titlelen=42 row=8}
-            <li class='dotline'><a href="[field:arcurl/]"target="_blank">[field:title/]</a></li>
-            {/dede:arclist}
-          </ul>
-        </dd>
-      </dl>
-    </div>
-    
-
-    
-    
-  </div>
-  <!-- /pleft --> 
-</div>
-<div class="flink w960 center clear">
-  <dl class="tbox">
-    <dt> <strong>友情链接</strong> <span class="more"> <a href="http://www.yinhanglilv.net">所有链接</a> | <a href="http://www.yinhanglilv.net">申请加入</a> </span> </dt>
-    <dd>
+<div class="main mt10"></div>
+<div class="friend_link clearfix">
+    <div>友情链接</div>
     <ul class="f5">
-    <li><a href='http://www.baidu.com/s?wd=www.yinhanglilv.net&rsv_spt=1&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&inputT=7111' target='_blank'>百度一下</a> </li>
+	<li><a href='http://www.baidu.com/s?wd=www.yinhanglilv.net&rsv_spt=1&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&inputT=7111' target='_blank'>百度一下</a> </li>
     <li><a href='http://www.so.com/s?ie=utf-8&shb=1&src=360sou_newhome&q=www.yinhanglilv.net' target='_blank'>360搜索</a> </li>
-    <li><a href='http://www.sogou.com/web?query=www.yinhanglilv.net&_asf=www.sogou.com&_ast=&w=01019900&p=40040110&ie=utf8&sut=4210&sst0=1421682243872&lkt=19%2C1421682239662%2C1421682243630' 
-
-target='_blank'>搜狗</a> </li>
+    <li><a href='http://www.sogou.com/web?query=www.yinhanglilv.net&_asf=www.sogou.com&_ast=&w=01019900&p=40040110&ie=utf8&sut=4210&sst0=1421682243872&lkt=19%2C1421682239662%2C1421682243630' target='_blank'>搜狗</a> </li>
     {dede:flink row='100'/}
-    </dd>
-  </dl>
+    </ul>
 </div>
-<!-- /flink --> 
 
-{dede:include filename="footer.htm"/} 
+{dede:include filename="index-footer.htm"/} 
+
 <!-- 广告位：对联广告 --> 
 <script type="text/javascript">
     /*120*300 创建于 2015-11-12*/

@@ -1,0 +1,83 @@
+ @charset "utf-8";
+/*Css Public Document*/
+.footer{width:960px;margin:0 auto;}
+
+.footHot{padding:10px 0;line-height:24px;}
+.footHot a{margin-right:10px;color:#898989;}
+
+.footBank{padding:10px 0;line-height:30px;border-top:1px solid #f0f0f0;}
+.footBank li{float:left;width:160px;}
+.footBank li img{margin:5px 4px 0 0;float:left;}
+
+.footNavs{background:#f4f4f4;padding-top:20px;padding-bottom:20px;}
+.footNavs dl{float:left;padding-left:14px;}
+.footNavs dl dt{font-size:14px;font-weight:bold;color:#333;line-height:35px;}
+.footNavs dl dd{line-height:26px;width:89px;}
+.footNavs dl dd a{color:#999;}
+.footNav_service{width:178px;}
+.footNav_service dd{float:left;}
+.footNav_business{width:267px;}
+.footNav_business dd{float:left;}
+.footNav_guide{width:220px;}
+.footNav_guide dd{float:left;}
+
+.foot_menu{margin-top:10px;height:38px;line-height:38px;background:url(../../images/cngold/foot_menu.png) repeat-x;text-align:center;}
+
+.copy{padding:5px 0 30px 0;text-align:center;color:#999;line-height:25px;}
+.copy span{color:#000;}
+
+/*sub_menu*/
+.sub_menu{overflow:hidden;clear:both;height:33px;line-height:33px;background:#2c6986;}
+.sub_menu ul{width:960px;float:left;overflow:hidden;margin-top:8px;}
+.sub_menu ul li{color:#fff;line-height:15px;height:15px;border-right:#c9c9c9 1px dotted;float:left;padding:0px 6px;display:inline;text-align:center;overflow:hidden;}
+.sub_menu ul li a{color:#fff;text-decoration:none;}
+.sub_menu ul li.curr a{color:yellow;font-weight:bold;}
+
+/*compareBox*/
+.compareBox{width:226px;background:#0F6481;padding:2px;position:fixed;right:0;top:200px;_position:absolute;_top:expression(offsetParent.scrollTop + 200);}
+.compareBox_tit{height:28px;line-height:28px;color:#fff;font-size:14px;font-weight:bold;background:url(../../images/cngold/nav_bg.png) repeat-x;}
+.compareBox_tit span{color:yellow;}
+.compareBox_tit .btn{display:block;float:right;width:20px;height:20px;margin:4px 4px 0 0;background:url(../../images/cngold/comp_colsebtn.png) no-repeat center center;text-indent:-9999em;cursor:pointer;}
+.compareBox_con{background:#fff;padding:10px;}
+.compareBox_con li span{line-height:20px;}
+.compareBox_con li span.txtspans{width:182px;height:20px;overflow:hidden;padding-left:4px;white-space:nowrap;}
+.compareBox_btns{text-align:center;margin:10px 0 0 0;}
+.compareBox_btns a{display:inline-block;margin:0 6px;width:62px;height:23px;line-height:23px;background:url(../../images/cngold/view_btn01.png);}
+.compareBox_btns a:hover{text-decoration:none;}
+.compareBox_btns a.submit{background-position:0 -23px;color:#fff;}
+
+/*footbar*/
+#footbar{width:100%;height:30px;background:url(../../images/cngold/screen_bottombg.jpg) repeat-x left bottom;position:fixed;left:0;bottom:0;right:0;overflow:hidden;_position:absolute;_bottom:auto;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));}
+.scr_all{width:960px;margin:0 auto;overflow:hidden;}
+.scr_logo{width:115px;height:30px;float:left;overflow:hidden;}
+.scr_login{width:115px;height:30px;background:url(../../images/cngold/screen_bottom_logo.jpg) no-repeat;text-indent:-9999px;}
+.scr_login a{width:111px;height:34px;display:block;}
+
+.scr_jp{float:left;padding-top:2px;overflow:hidden;}
+.scr_jp h3{width:64px;height:28px;float:left;background:url(../../images/cngold/screen_bottom_btn01.jpg) no-repeat;text-indent:-9999px;}
+.scr_jp a{width:64px;height:28px;display:block;}
+.scr_jp .jp_bg{width:190px;height:28px;float:left;background:url(../../images/cngold/screen_bottom_textbg.jpg) repeat-x 0 1px;padding:2px 0 0;overflow:hidden;}
+.scr_jp .jp_text{width:190px;height:22px;position:relative;overflow:hidden;cursor:pointer;}
+.scr_jp .jp_text #brandlist_one{width:190px;position:relative;}
+.scr_jp .jp_text ul li{line-height:22px;border:none;padding:0;color:#666;}
+.scr_jp .jp_text ul li span{font-weight:400;color:#48a4d0;}
+.scr_jp .jp_text ul li.odd{background:none;}
+.scr_arrow{width:16px;height:26px;float:left;background:url(../../images/cngold/screen_bottom_arrow.jpg) no-repeat 0 1px;}
+.scr_arrow em#pre_one,.scr_arrow em#next_one{width:16px;height:12px;display:block;text-indent:-9999px;cursor:pointer;}
+
+.scr_btn02,.scr_btn03,.scr_btn04,.scr_btn05{height:25px;float:left;margin:4px 0 0 3px;text-indent:-9999px;}
+.scr_btn02 a,.scr_btn03 a,.scr_btn04 a,.scr_btn05 a{width:100%;height:100%;display:block;text-decoration:none;}
+.scr_btn02{width:141px;background:url(../../images/cngold/screen_bottom_btn02.jpg) no-repeat;}
+.scr_btn03{width:166px;background:url(../../images/cngold/screen_bottom_btn03.jpg) no-repeat;}
+.scr_btn04{width:136px;background:url(../../images/cngold/screen_bottom_btn04.jpg) no-repeat;}
+.scr_btn05{width:119px;background:url(../../images/cngold/screen_bottom_btn05.jpg) no-repeat;font:400 10px/25px arial;text-indent:11px;}
+.scr_btn05 a{color:#fff;}
+.scr_btn05 a:hover{color:#fff;text-decoration:none;}
+*html{background-image:url(about:blank);background-attachment:fixed;}
+
+/* 2014-11-11 新增加的样式 */
+.foot-nav ul{height:35px;line-height:35px;background:url(../../images/cngold/cngold_nav.png) 0 -120px repeat-x;overflow:hidden;margin-bottom:10px; padding-left:3px;}
+.foot-nav li{float:left;width:43px;text-align:center;background:url(../../images/cngold/cngold_nav.png) right -155px no-repeat;overflow:hidden;}
+.foot-nav li.last{background:none; padding-left:7px;}
+.foot-nav li a{color:#fff;display:block;}
+.foot-nav li a:hover,.foot-nav li a.acurent {background:#366C8B url(../../images/cngold/cngold_nav.png) center -45px no-repeat;color:#fff;}
